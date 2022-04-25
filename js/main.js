@@ -1,8 +1,8 @@
 /*  
-    App Privacy Policy Generator: A simple web app to generate a generic 
-    privacy policy for your Android/iOS apps
+    Free & Open Source Privacy Policy Generator: A simple web app to generate a 
+	generic privacy policy for your Android/iOS apps or websites
 
-    Copyright 2017-Present Nishant Srivastava
+    Copyright 2017-Present Digital Malayali, Nishant Srivastava, Arthur Gareginyan
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,25 +22,22 @@ var app = new Vue({
   el: "#app",
   data: {
     iOrWe: "[I/We]",
-    typeOfApp: "",
-    typeOfAppTxt: "[open source/free/freemium/ad-supported/commercial]",
+	cateType: "",
     typeOfDev: "",
+	appOrWebsite: "[website/app]",
+	visitOrUsers: "[visitors/users]",
+	vOrUser: "[visitor/user]",
+	browserOrApp: "[browser/app]",
     appName: "",
+	siteURLIn: "",
+	siteURL: "[provide the complete URL of your website here]",
     appContact: "",
     myOrOur: "[my/our]",
     meOrUs: "[me/us]",
-    atNoCost: "[at no cost]",
-    retainedInfo:
-      "[retained on your device and is not collected by [me/us] in any way]/[retained by us and used as described in this privacy policy]",
     devName: "",
     companyName: "",
     devOrCompanyName: "[Developer/Company name]",
-    pidInfoIn: "",
-    pidInfo:
-      "[add whatever else you collect here, e.g. users name, address, location, pictures]",
-    osType: "",
     effectiveFromDate: new Date().toISOString().slice(0, 10),
-    requirementOfSystem: "system",
     thirdPartyServices: thirdPartyServicesJsonArray,
     showPrivacyModal: false,
     showGDPRPrivacyModal: false,
@@ -65,8 +62,8 @@ var app = new Vue({
     nextStep: function () {
       if (this.wizardStep <= this.totalWizardSteps) {
         if (this.wizardStep == 1) {
-          if (this.appName.length == 0 || this.appName == "" || this.appName == null || this.appName == "Please provide an App Name!") {
-            this.appName = "Please provide an App Name!"
+          if (this.appName.length == 0 || this.appName == "" || this.appName == null || this.appName == "Please provide the name of App or Website!") {
+            this.appName = "Please provide the name of App or Website!"
             return
           }
 
@@ -118,64 +115,34 @@ var app = new Vue({
       loadInTextView(target, markdown)
     },
     generate: function () {
+		if (this.cateType === "App") {
+        this.appOrWebsite = "app"
+        this.visitOrUsers = "users"
+		this.browserOrApp = "app"
+		this.vOrUser = "user"
+      } else if (this.cateType === "Website") {
+        this.appOrWebsite = "website"
+        this.visitOrUsers = "visitors"
+		this.browserOrApp = "browser"
+		this.vOrUser = "visitor"
+      }
+	  
+	  if (this.siteURLIn === "") {
+        this.siteURL = "."
+      } else {
+        this.siteURL = " at " + this.siteURLIn + "."
+      }
+		
       if (this.typeOfDev === "Individual") {
         this.devOrCompanyName = this.devName
         this.iOrWe = "I"
         this.myOrOur = "my"
         this.meOrUs = "me"
-        this.retainedInfo =
-          "retained on your device and is not collected by " +
-          this.meOrUs +
-          " in any way"
       } else if (this.typeOfDev === "Company") {
         this.devOrCompanyName = this.companyName
         this.iOrWe = "we"
         this.myOrOur = "our"
         this.meOrUs = "us"
-        this.retainedInfo =
-          "retained by us and used as described in this privacy policy"
-      }
-
-      if (this.typeOfApp === "Commercial") {
-        this.atNoCost = ""
-      } else {
-        this.atNoCost = "at no cost"
-      }
-
-      if (this.pidInfoIn === "") {
-        this.pidInfo = "."
-      } else {
-        this.pidInfo = ", including but not limited to " + this.pidInfoIn + "."
-      }
-
-      switch (this.typeOfApp) {
-        case "Free":
-        case "Freemium":
-        case "Commercial":
-          this.typeOfAppTxt = "a " + this.typeOfApp
-          break
-        case "Open Source":
-        case "Ad Supported":
-          this.typeOfAppTxt = "an " + this.typeOfApp
-          break
-      }
-
-      switch (this.osType) {
-        case "Android": {
-          this.osType = "Android"
-          this.requirementOfSystem = "system"
-          break
-        }
-        case "iOS": {
-          this.osType = "iOS"
-          this.requirementOfSystem = "system"
-          break
-        }
-        case "Android & iOS": {
-          this.osType = "Android & iOS"
-          this.requirementOfSystem = "both systems"
-          break
-        }
       }
     },
     togglePrivacyModalVisibility: function () {

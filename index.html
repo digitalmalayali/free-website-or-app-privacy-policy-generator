@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+    Free & Open Source Privacy Policy Generator: A simple web app to generate a 
+	generic privacy policy for your Android/iOS apps or websites
+    
+    Copyright 2017-Present Digital Malayali, Nishant Srivastava, Arthur Gareginyan
+    
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+    -->
+    <title>Free & Open Source Privacy Policy Generator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A simple and free open source web app to generate a generic privacy policy for your Android/iOS apps or websites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="copyright" content="Digital Malayali, Nishant Srivastava, Arthur Gareginyan">
+    <meta name="author" content="Digital Malayali, contact@digitalmalayali.in">
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Free & Open Source Privacy Policy Generator">
+    <!-- Tile icon for Win8 (144x144 + tile color)-->
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-53824796-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+      dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-53824796-8");
+    </script>
+  </head>
+  <body class="bg-pattern">
+    <div id="app">
+      <div class="container">
+        <section class="hero is-primary">
+          <div class="hero-body">
+            <div class="columns">
+              <div class="column">
+                <div class="content"><a class="title" href="https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator" target="_blank" rel="noopener noreferrer">
+                    <h1>Free & Open Source <em>Privacy Policy</em> Generator</h1></a>
+                  <h4 class="subtitle">
+                    Generate a generic Privacy Policy for your website or apps
+                    <p>Modified with <img class="heart-logo" src="images/app_icons/heart.svg" alt="heart">&nbsp;by <a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Digital Malayali.<br> 
+					</a>Based on the original web app by<a href="https://github.com/nisrulz/app-privacy-policy-generator/" target="_blank" rel="noopener noreferrer"> Nishant </a>and template by <a href="https://github.com/ArthurGareginyan/privacy-policy-template" target="_blank" rel="noopener noreferrer">Arthur Gareginyan</a>.</p>
+                    <p><a href="https://twitter.com/intent/tweet?text=%F0%9F%93%9D%20App%20Privacy%20Policy%20Generator%3A%20A%20free%20web-app%20to%20generate%20a%20generic%20privacy%20policy%20for%20your%20Android%2FiOS%2FKaiOS%20%F0%9F%93%B1%20apps%20%F0%9F%9A%80%20%7C%20Built%20by%20%40nisrulz%20%20%E2%9C%85%20Web%20App%3A%20https%3A%2F%2Fapp-privacy-policy-generator.nisrulz.com%20%E2%9C%85%20Checkout%20Reviews%3A%20https%3A%2F%2Fgithub.com%2Fnisrulz%2Fapp-privacy-policy-generator%2Fissues%2F65%20%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20%23appg%20%23free%20%23app%20%23privacy%20%23policy%20%23generator%20%20" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="images/social_icons/twitter.svg" alt="Twitter"></a><a @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer"><img class="social-logo" src="images/app_icons/disclaimer.svg" alt="Disclaimer"></a><a href="https://github.com/nisrulz/app-privacy-policy-generator" target="_blank" rel="noopener noreferrer"><img alt="GitHub stars" src="https://img.shields.io/github/stars/digitalmalayali/free-website-or-app-privacy-policy-generator?style=social"></a></p>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="step-1" v-if="wizardStep==1">
+          <div class="columns">
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" src="images/app_icons/next.png" @click="nextStep()"></div>
+            <div class="column box scrollable">
+				<!-- Category-->
+				<div class="control is-expanded">
+                <p class="help form-label">Category</p>
+				<div class="select is-primary">
+                  <select required v-model="cateType">
+                    <option value="" disabled="">Select category</option>
+                    <option>Website</option>
+                    <option>App</option>
+                  </select>
+                </div>
+				</div>
+              <div class="control is-expanded">
+                <p class="help form-label">Website or App Name</p>
+                <input class="input" type="text" required v-model="appName" placeholder="Name of Website or App" v-bind:class="{ 'is-danger': (appName == 'Please provide the name of App or Website!' || appName.length == 0) }">
+              </div>
+              <div class="control is-expanded">
+                <p class="help form-label">Contact Information</p>
+                <input class="input" type="email" required v-model="appContact" placeholder="Email Address" v-bind:class="{ 'is-danger': (appContact == 'Please provide contact info!' || appContact.length == 0) }">
+              </div>
+			  <div class="control is-expanded">
+                <p class="help form-label">Website URL</p>
+                <input class="input" type="text" required="" v-model="siteURLIn" placeholder="www.example.com">
+              </div>
+              <div class="control">
+                <p class="help form-label">Policy Effective Date</p>
+                <!-- Policy Effective Date-->
+                <input class="input is-primary" type="date" required="" v-model="effectiveFromDate">
+              </div>
+              <div class="control is-expanded">
+                <p class="help form-label">Owner Type</p>
+                <!-- Owner-->
+                <div class="select is-primary">
+                  <select v-model="typeOfDev">
+                    <option value="" disabled="">Select owner type</option>
+                    <option>Individual</option>
+                    <option>Company</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control is-expanded" v-if="typeOfDev=='Company'">
+                <p class="help form-label">Company Name</p>
+                <!-- Company Name-->
+                <input class="input is-primary" type="text" v-model="companyName" placeholder="Company Name">
+              </div>
+              <div class="control is-expanded" v-if="typeOfDev=='Individual'">
+                <p class="help form-label">Developer Name</p>
+                <!-- Developer Name-->
+                <input class="input is-primary" type="text" v-model="devName" placeholder="Developer Name">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="step-2" v-if="wizardStep==2">
+          <div class="columns">
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_2.svg">
+              <div class="center-parent"><img class="child nav-btn" src="images/app_icons/prev.png" @click="prevStep()"><img class="child nav-btn" src="images/app_icons/next.png" @click="nextStep()"></div>
+            </div>
+            <div class="column box scrollable"><b>Include links to Third Party Services</b><a v-for="item in thirdPartyServices" rel="noopener noreferrer"><br>
+                <input type="checkbox" :id="'list-switch-' + item.model" v-model="item[item.model]">
+                <label :for="'list-switch-' + item.model"><img class="thirdparty-logo" :src="item.logo" :alt="item.name"><span class="thirdparty-text">{{ item.name }}</span></label></a></div>
+          </div>
+        </section>
+        <section class="section" id="step-3" v-if="wizardStep==3">
+          <div class="columns">
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_3.svg"><img class="center-block nav-btn" src="images/app_icons/prev.png" @click="prevStep()"></div>
+            <div class="column">
+              <div class="box">
+                <ol>This Privacy Policy Generator is completely <b>FREE</b>.
+                  <p>If you are able to, then consider supporting us by:
+                    <li><a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Visiting our website &#127760;</a></li>
+                    <li><a href="https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator" target="_blank" rel="noopener noreferrer">Giving a star for our GitHub repo &#11088;</a></li>
+                  </p>
+                </ol>
+                <p>Please consider sharing this web app with your friends: <a href="https://twitter.com/intent/tweet?text=%F0%9F%93%9D%20App%20Privacy%20Policy%20Generator%3A%20A%20free%20web-app%20to%20generate%20a%20generic%20privacy%20policy%20for%20your%20Android%2FiOS%2FKaiOS%20%F0%9F%93%B1%20apps%20%F0%9F%9A%80%20%7C%20Built%20by%20%40nisrulz%20%20%E2%9C%85%20Web%20App%3A%20https%3A%2F%2Fapp-privacy-policy-generator.nisrulz.com%20%E2%9C%85%20Checkout%20Reviews%3A%20https%3A%2F%2Fgithub.com%2Fnisrulz%2Fapp-privacy-policy-generator%2Fissues%2F65%20%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20%23appg%20%23free%20%23app%20%23privacy%20%23policy%20%23generator%20%20" target="_blank" rel="noopener noreferrer">Twitter, </a><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">Linkedin, </a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fapp-privacy-policy-generator.nisrulz.com%2F" target="_blank" rel="noopener noreferrer">Facebook, </a><a href="https://reddit.com/submit?url=https://app-privacy-policy-generator.nisrulz.com/&amp;title=%F0%9F%93%9D%20App%20Privacy%20Policy%20Generator" target="_blank" rel="noopener noreferrer">Reddit</a></p>
+                <p>...or adding a review/comment in the project&apos;s <a href="https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator/discussions" target="_blank" rel="noopener noreferrer">Discussions &#128172;</a></p>
+              </div>
+              <div class="box final-box"><b>All Done!</b><br>
+                <p>Now sit back and choose the type of document you want to generate: </p><br><a class="button is-primary" @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br><br>
+                <p class="has-text-grey-light">The accuracy of the generated privacy policy and terms &amp; conditions on this website is not legally binding. Use at your own risk.</p>
+                <p><a class="has-text-danger" @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer">Read the full Disclaimer here</a></p>
+              </div>
+              <form id="fc-form" action="https://app.flycricket.com/import/privacy" method="post" target="_blank">
+                <input type="hidden" name="fc-referrer" value="digitalmalayali">
+                <input id="fc-terms" type="hidden" name="fc-terms">
+                <input id="fc-body" type="hidden" name="fc-privacy">
+                <input id="fc-name" type="hidden" name="fc-name" v-model="appName">
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="modal" v-bind:class="{ 'is-active': showPrivacyModal }">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title no-select">Privacy Policy</p>
+              <button class="delete" aria-label="close" @click="togglePrivacyModalVisibility"></button>
+            </header>
+            <section class="modal-card-body modal-box">
+              <div id="privacy_content" v-show="contentRenderType==1"><strong>Privacy Policy</strong>
+				  <p>
+				  {{ devOrCompanyName }} operates the {{appOrWebsite}} {{appName}}{{siteURL}} 
+				  {{iOrWe | capitalize }} takes your privacy seriously. To better protect your privacy 
+				  {{iOrWe}} provide this privacy policy notice explaining the way your personal information 
+				  is collected and used.
+				  </p>
+                <p><strong>Collection of Routine Information</strong></p>
+                <p>
+				  This {{appOrWebsite}} track basic information about their {{visitOrUsers}}. 
+				  This information includes, but is not limited to, IP addresses, {{browserOrApp}} details, 
+				  timestamps and referring pages. None of this information can personally identify specific 
+				  {{visitOrUsers}} to this {{appOrWebsite}}. The information is tracked for routine 
+				  administration and maintenance purposes.
+                </p>
+				<p><strong>Cookies</strong></p>
+				<p>
+				  Where necessary, this {{appOrWebsite}} uses cookies to store information about a {{vOrUser}}’s 
+				  preferences and history in order to better serve the {{vOrUser}} and/or present the 
+				  {{vOrUser}} with customized content.
+                </p>
+				<p><strong>Advertisement and Other Third Parties</strong></p>
+				<p>
+				  Advertising partners and other third parties may use cookies, scripts and/or web beacons to track 
+				  {{vOrUser}} activities on this {{appOrWebsite}} in order to display advertisements 
+				  and other useful information. Such tracking is done directly by the third parties through their own 
+				  servers and is subject to their own privacy policies. This {{appOrWebsite}} has no access or 
+				  control over these cookies, scripts and/or web beacons that may be used by third parties.
+                </p>
+                <div v-if="hasThirdPartyServicesSelected">
+                  <p>
+                    {{iOrWe | capitalize }} have included links on this {{appOrWebsite}} for your use and reference. 
+					{{iOrWe | capitalize }} are not responsible for the privacy policies on these websites. You should be aware 
+					that the privacy policies of these websites may differ from {{myOrOur}} own.
+                  </p>
+                  <p>
+                    Link to the privacy policy of third-party service providers used
+                    by the app
+                  </p>
+                  <ul>
+                    <li v-if="item[item.model] &amp;&amp; item.link.privacy" v-for="item in thirdPartyServices"><a :href="item.link.privacy" target="_blank" rel="noopener noreferrer">{{item.name}}</a></li>
+                  </ul>
+                </div>
+                <p><strong>Security</strong></p>
+                <p>
+                  The security of your personal information is important to {{meOrUs}}, but remember that no 
+				  method of transmission over the Internet, or method of electronic storage, is 100% secure. 
+				  While {{iOrWe}} strive to use commercially acceptable means to protect your personal information, 
+				  {{iOrWe}} cannot guarantee its absolute security.
+                </p>
+                <p><strong>Changes To This Privacy Policy</strong></p>
+                <p>
+                  This Privacy Policy is effective as of {{effectiveFromDate}} and will remain in effect except with respect to any 
+				  changes in its provisions in the future, which will be in effect immediately after being posted on this page. 
+				  {{iOrWe | capitalize }} reserve the right to update or change {{myOrOur}} Privacy Policy at any time and you 
+				  should check this Privacy Policy periodically. If {{iOrWe}} make any material changes to this Privacy Policy, 
+				  {{iOrWe}} will notify you either through the email address you have provided {{meOrUs}}, or by 
+				  placing a prominent notice on {{myOrOur}} {{appOrWebsite}}.
+                </p>
+                <p><strong>Contact Information</strong></p>
+                <p>
+                  For any questions or concerns regarding the privacy policy, 
+				  please send {{meOrUs}} an email to {{appContact}}.
+                </p>
+                <p>This privacy policy page was created by <a href="https://github.com/ArthurGareginyan/privacy-policy-template/" target="_blank" rel="noopener noreferrer">Arthur Gareginyan </a>and modified/generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">Free & Open Source Privacy Policy Generator</a></p>
+              </div>
+              <textarea class="textarea" id="privacy_txtarea" onclick="this.focus();this.select()" readonly="readonly" v-show="contentRenderType==2"></textarea>
+            </section>
+            <footer class="modal-card-foot">
+              <button class="button is-success" @click="getHtml('privacy_content','privacy_txtarea')">HTML</button>
+              <button class="button is-success" @click="getMarkdown('privacy_content', 'privacy_txtarea')">Markdown</button>
+              <button class="button is-success" v-if="contentRenderType!=1" @click="preview()">Preview</button>
+              <div style="flex:1">
+                <button class="button is-info" @click="fc_deploy()" style="float:right;">Deploy to Flycricket</button>
+              </div>
+            </footer>
+          </div>
+        </div> 
+		<div class="modal" v-bind:class="{ 'is-active': showDisclaimerModal }">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">Disclaimer</p>
+              <button class="delete" aria-label="close" @click="toggleDisclaimerModalVisibility"></button>
+            </header>
+            <section class="modal-card-body">
+              <p>
+                This template for privacy policy and terms &amp; conditions is
+                provided on &quot;AS IS&quot; basis, without warranties or conditions of
+                any kind, either expressed or implied. It is intended for you as
+                an inspirational document and you may use it when compiling your
+                own privacy policy. The developer of App Privacy Policy
+                Generator does not take any responsibility for the legal
+                consequences associated with the use of this privacy policy or
+                terms &amp; conditions, and urges you to seek independent legal
+                advice ensuring compliance with all rules applicable for the
+                users of your application. The developer of App Privacy Policy
+                Generator can in no way be found liable for any direct or
+                indirect damage/loss suffered by individual/company due to the
+                use of this document.
+              </p>
+            </section>
+            <footer class="modal-card-foot">
+              <button class="button is-info" aria-label="close" @click="toggleDisclaimerModalVisibility">Ok</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/to-markdown/3.1.1/to-markdown.min.js" integrity="sha256-2PIa0cHy6lNEesnk4/qokv291Whx/uhAy2V6WL2zmfo=" crossorigin="anonymous"></script>
+    <script src="js/thirdpartyservices.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/flycricket.js"></script>
+  </body>
+</html>

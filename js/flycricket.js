@@ -1,8 +1,8 @@
-// 
-    App Privacy Policy Generator: A simple web app to generate a generic 
-    privacy policy for your Android/iOS apps
+/*  
+    Free & Open Source Privacy Policy Generator: A simple web app to generate a 
+	generic privacy policy for your Android/iOS apps or websites
 
-    Copyright 2017-Present Nishant Srivastava
+    Copyright 2017-Present Digital Malayali, Nishant Srivastava, Arthur Gareginyan
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,11 +16,12 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
-title App Privacy Policy Generator
+ */
+function fc_deploy() {
+  var form = document.getElementById("fc-form");
 
-include meta_info.pug
-
-include css.pug
-
-include google_analytics.pug
+  // fill in the body with the html content
+  document.getElementById('fc-body').value = getContent('privacy_content')
+  
+  form.submit();
+}

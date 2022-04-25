@@ -16,8 +16,11 @@ li {
 .hero-body .content {
   text-align: center;
 }
+.hero-body .content a:link {
+  color: blue;
+}
 .hero-body .content h1 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 0.8em;
 }
 .hero-body .content h4 {
@@ -26,7 +29,6 @@ li {
 .hero-body .content > .title, .hero-body .content > .subtitle {
   color: black;
 }
-
 .hero.is-primary .subtitle a:not(.button) {
   color: black;
 }
@@ -247,5 +249,3 @@ input[type=checkbox]:checked + label:before {
   font-size: 0.6em;
   color: gray;
 }
-
-/*# sourceMappingURL=style.css.map */

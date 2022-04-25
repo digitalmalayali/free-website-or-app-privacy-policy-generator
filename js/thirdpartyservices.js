@@ -1,8 +1,8 @@
 /*  
-    App Privacy Policy Generator: A simple web app to generate a generic 
-    privacy policy for your Android/iOS apps
+    Open Source Website or App Privacy Policy Generator: A simple web app to generate a 
+	generic privacy policy for your Android/iOS apps or websites
 
-    Copyright 2017-Present Nishant Srivastava
+    Copyright 2017-Present Digital Malayali, Nishant Srivastava, Arthur Gareginyan
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -163,7 +163,7 @@ var thirdPartyServicesJsonArray = [
     "name": "One Signal",
     "model": "onesignal",
     "onesignal": false,
-    "logo": "images/third_party_logos/one_signal.svg",
+    "logo": "images/third_party_logos/one_signal.png",
     "link": {
       "privacy": "https://onesignal.com/privacy_policy",
       "terms": "https://onesignal.com/tos"
@@ -231,7 +231,7 @@ var thirdPartyServicesJsonArray = [
     "name": "Amplitude",
     "model": "amplitude",
     "amplitude": false,
-    "logo": "images/third_party_logos/amplitude.svg",
+    "logo": "images/third_party_logos/amplitude.png",
     "link": {
       "privacy": "https://amplitude.com/privacy",
       "terms": "https://amplitude.com/terms"
