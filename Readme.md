@@ -19,7 +19,7 @@
 
 ## Author & Contributors
 
-This project is a modified version of the original web app by [Nishant Srivastava](https://github.com/nisrulz/nisrulz.github.io#nishant-srivastava) and template written by [Arthur Gareginyan] (https://github.com/ArthurGareginyan/privacy-policy-template). Please consider supporting them.
+This project is a modified version of the original web app by [Nishant Srivastava](https://github.com/nisrulz/nisrulz.github.io#nishant-srivastava) and template written by [Arthur Gareginyan](https://github.com/ArthurGareginyan/privacy-policy-template). Please consider supporting them.
 
 ## Ways You Can Help/Support this project
 
@@ -28,11 +28,11 @@ This project is a modified version of the original web app by [Nishant Srivastav
 - [**Open an Issue**](https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator/issues/new/choose) if you catch any error in copy text or within the project itself.
 - **Open a Pull Request** to include support for adding more 3rd party service's links or fixes against [existing issues](https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator/issues).
 
-- Tell me you like this project or how it helped you out!
+- Tell us you like this project or how it helped you out!
 
   - [Comment in the project's discussions](https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator/discussions) :blush:,
   - Reach out on [Twitter](https://twitter.com/digimalayali),
-  - or [send a nice email my way](mailto:contact@digitalmalayali.in)!
+  - or [send us a nice email](mailto:contact@digitalmalayali.in)!
 
 Thanks for your interest in this :heart:
 
