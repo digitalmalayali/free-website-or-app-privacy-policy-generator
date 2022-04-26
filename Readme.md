@@ -21,6 +21,8 @@
 
 This project is a modified version of the original web app by [Nishant Srivastava](https://github.com/nisrulz/nisrulz.github.io#nishant-srivastava) and template written by [Arthur Gareginyan](https://github.com/ArthurGareginyan/privacy-policy-template). Please consider supporting them.
 
+Illustrations by Katerina Limpitsouni via [unDraw](https://undraw.co/).
+
 ## Ways You Can Help/Support this project
 
 - **Star** this repository and tell all your friends about it.
@@ -42,4 +44,4 @@ Thanks for your interest in this :heart:
 
 ## License
 
-[AGPLv3 | Copyright 2017 Digital Malayali, Nishant Srivastava, Arthur Gareginyan](LICENSE)
+[AGPLv3 | Copyright 2012 Digital Malayali, Nishant Srivastava, Arthur Gareginyan](LICENSE)
