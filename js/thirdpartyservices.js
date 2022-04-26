@@ -2,7 +2,7 @@
     Open Source Website or App Privacy Policy Generator: A simple web app to generate a 
 	generic privacy policy for your Android/iOS apps or websites
 
-    Copyright 2017-Present Digital Malayali, Nishant Srivastava, Arthur Gareginyan
+    Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
