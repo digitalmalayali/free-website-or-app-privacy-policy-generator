@@ -11,7 +11,7 @@
 
 <div align="center"><a href="https://github.com/digitalmalayali/free-website-or-app-privacy-policy-generator">
   <img src="https://img.shields.io/github/followers/digitalmalayali.svg?style=social&amp;label=Follow" alt="GitHub followers">
-</a><a href="https://twitter.com/nisrulz">
+</a><a href="https://twitter.com/DigiMalayali">
   <img src="https://img.shields.io/twitter/follow/digimalayali.svg?style=social" alt="Twitter Follow">
 </a>
 
