@@ -169,7 +169,6 @@ img.social-logo {
 .column.is-information .nav-btn {
   cursor: grab;
   height: 3em;
-  opacity: 0.8;
 }
 .column.is-information .sidebar-img {
   pointer-events: none;
