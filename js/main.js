@@ -34,6 +34,7 @@ var app = new Vue({
     appContact: "",
     myOrOur: "[my/our]",
     meOrUs: "[me/us]",
+	areOrAm: "[are/am]",
     devName: "",
     companyName: "",
     devOrCompanyName: "[Developer/Company name]",
@@ -138,11 +139,13 @@ var app = new Vue({
         this.iOrWe = "I"
         this.myOrOur = "my"
         this.meOrUs = "me"
+		this.areOrAm = "am"
       } else if (this.typeOfDev === "Company") {
         this.devOrCompanyName = this.companyName
         this.iOrWe = "we"
         this.myOrOur = "our"
         this.meOrUs = "us"
+		this.areOrAm = "are"
       }
     },
     togglePrivacyModalVisibility: function () {
