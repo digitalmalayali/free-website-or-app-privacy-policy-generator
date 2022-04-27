@@ -1,5 +1,6 @@
 body, html {
   background: white;
+  font-family: "League Spartan", sans-serif;
 }
 
 li {
@@ -18,9 +19,11 @@ li {
 }
 .hero-body .content h1 {
   font-size: 1.2em;
+  font-weight: 600;
   margin-bottom: 0.8em;
 }
 .hero-body .content h4 {
+  font-weight: 400;
   margin-bottom: 0;
 }
 .hero-body .content > .title, .hero-body .content > .subtitle {
