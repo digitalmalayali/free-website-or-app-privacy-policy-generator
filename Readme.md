@@ -5,7 +5,7 @@
 <div align="center"><strong>
   <em>A simple web app to generate a generic privacy policy for your website</em>
 </strong><br>
-<a href="https://app-privacy-policy-generator.nisrulz.com/">Click here to access the webapp online</a></div>
+<a href="https://free-privacy-policy-generator.digitalmalayali.in/">Click here to access the webapp online</a></div>
 
 <br>
 
