@@ -47,4 +47,6 @@ Thanks for your interest in this :heart:
 
 ## License 📝
 
-[AGPLv3](LICENSE) | Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
+[GNU Affero General Public License v3.0](LICENSE)
+
+© Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
