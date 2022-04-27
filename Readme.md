@@ -5,7 +5,10 @@
 <div align="center"><strong>
   <em>A simple web app to generate a generic privacy policy for your website</em>
 </strong><br>
-<a href="https://free-privacy-policy-generator.digitalmalayali.in/">Click here to access the webapp online</a></div>
+<a href="https://free-privacy-policy-generator.digitalmalayali.in/">Click here to access the webapp online</a>.
+  
+<br> 
+For generating privacy policy for apps, <a href="https://app-privacy-policy-generator.nisrulz.com/">click here</a> instead.</div>
 
 <br>
 
@@ -17,13 +20,13 @@
 
 </div>
 
-## Author & Contributors
+## Author & Contributors 🙏
 
 This project is a modified version of the original web app by [Nishant Srivastava](https://github.com/nisrulz/nisrulz.github.io#nishant-srivastava) and template written by [Arthur Gareginyan](https://github.com/ArthurGareginyan/privacy-policy-template). Please consider supporting them.
 
 Illustrations by Katerina Limpitsouni via [unDraw](https://undraw.co/).
 
-## Ways You Can Help/Support this project
+## Ways You Can Help/Support this project 💕
 
 - **Star** this repository and tell all your friends about it.
 - **Watch** for new releases to get an update if something happens.
@@ -38,10 +41,10 @@ Illustrations by Katerina Limpitsouni via [unDraw](https://undraw.co/).
 
 Thanks for your interest in this :heart:
 
-## Screenshots
+## Screenshots 💻
 
 <img src="img/sc_1.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_2.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_3.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 />
 
-## License
+## License 📝
 
 [AGPLv3](LICENSE) | Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
