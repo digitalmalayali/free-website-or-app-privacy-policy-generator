@@ -16,9 +16,6 @@ li {
 .hero-body .content {
   text-align: center;
 }
-.hero-body .content a:link {
-  color: blue;
-}
 .hero-body .content h1 {
   font-size: 1.2em;
   margin-bottom: 0.8em;
