@@ -83,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-1" v-if="wizardStep==1">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" src="images/app_icons/next.png" @click="nextStep()"></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" src="images/app_icons/next.svg" @click="nextStep()"></div>
             <div class="column box scrollable">
 				<!-- Category-->
 				<div class="control is-expanded">
@@ -140,7 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <section class="section" id="step-2" v-if="wizardStep==2">
           <div class="columns">
             <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_2.svg">
-              <div class="center-parent"><img class="child nav-btn" src="images/app_icons/prev.png" @click="prevStep()"><img class="child nav-btn" src="images/app_icons/next.png" @click="nextStep()"></div>
+              <div class="center-parent"><img class="child nav-btn" src="images/app_icons/prev.svg" @click="prevStep()"><img class="child nav-btn" src="images/app_icons/next.svg" @click="nextStep()"></div>
             </div>
             <div class="column box scrollable"><b>Include links to Third Party Services</b><a v-for="item in thirdPartyServices" rel="noopener noreferrer"><br>
                 <input type="checkbox" :id="'list-switch-' + item.model" v-model="item[item.model]">
@@ -149,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-3" v-if="wizardStep==3">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_3.svg"><img class="center-block nav-btn" src="images/app_icons/prev.png" @click="prevStep()"></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_3.svg"><img class="center-block nav-btn" src="images/app_icons/prev.svg" @click="prevStep()"></div>
             <div class="column">
               <div class="box">
                 <ol>This Privacy Policy Generator is completely <b>FREE</b>.
