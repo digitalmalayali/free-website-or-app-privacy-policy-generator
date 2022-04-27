@@ -1,7 +1,6 @@
 /*  
-    Free & Open Source Privacy Policy Generator: A simple web app to generate a 
-	generic privacy policy for your Android/iOS apps or websites
-
+    Free & Open Source Privacy Policy Generator: A simple web app to generate a generic privacy policy for your website
+    
     Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
 
     This program is free software: you can redistribute it and/or modify
@@ -22,16 +21,10 @@ var app = new Vue({
   el: "#app",
   data: {
     iOrWe: "[I/We]",
-	cateType: "",
     typeOfDev: "",
-	appOrWebsite: "[website/app]",
-	visitOrUsers: "[visitors/users]",
-	vOrUser: "[visitor/user]",
-	browserOrApp: "[browser/app]",
-    appName: "",
-	siteURLIn: "",
-	siteURL: "[provide the complete URL of your website here]",
-    appContact: "",
+    webName: "",
+	siteURL: "",
+    webContact: "",
     myOrOur: "[my/our]",
     meOrUs: "[me/us]",
 	areOrAm: "[are/am]",
@@ -63,13 +56,18 @@ var app = new Vue({
     nextStep: function () {
       if (this.wizardStep <= this.totalWizardSteps) {
         if (this.wizardStep == 1) {
-          if (this.appName.length == 0 || this.appName == "" || this.appName == null || this.appName == "Please provide the name of App or Website!") {
-            this.appName = "Please provide the name of App or Website!"
+          if (this.webName.length == 0 || this.webName == "" || this.webName == null || this.webName == "Please provide the name website!") {
+            this.webName = "Please provide the name of website!"
             return
           }
 
-          if (this.appContact.length == 0 || this.appContact == "" || this.appContact == null || this.appContact == "Please provide contact info!") {
-            this.appContact = "Please provide contact info!"
+          if (this.webContact.length == 0 || this.webContact == "" || this.webContact == null || this.webContact == "Please provide contact info!") {
+            this.webContact = "Please provide contact info!"
+            return
+          }
+		  
+		  if (this.siteURL.length == 0 || this.siteURL == "" || this.siteURL == null || this.siteURL == "Please provide your website URL!") {
+            this.siteURL = "Please provide your website URL!"
             return
           }
         }
@@ -116,25 +114,7 @@ var app = new Vue({
       loadInTextView(target, markdown)
     },
     generate: function () {
-		if (this.cateType === "App") {
-        this.appOrWebsite = "app"
-        this.visitOrUsers = "users"
-		this.browserOrApp = "app"
-		this.vOrUser = "user"
-      } else if (this.cateType === "Website") {
-        this.appOrWebsite = "website"
-        this.visitOrUsers = "visitors"
-		this.browserOrApp = "browser"
-		this.vOrUser = "visitor"
-      }
-	  
-	  if (this.siteURLIn === "") {
-        this.siteURL = "."
-      } else {
-        this.siteURL = " at " + this.siteURLIn + "."
-      }
-		
-      if (this.typeOfDev === "Individual") {
+	  if (this.typeOfDev === "Individual") {
         this.devOrCompanyName = this.devName
         this.iOrWe = "I"
         this.myOrOur = "my"

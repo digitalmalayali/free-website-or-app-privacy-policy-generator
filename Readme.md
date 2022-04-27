@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="img/banner.png" alt="Free & Open Source Privacy Policy Generator">
+  <img src="img/banner.jpg" alt="Free & Open Source Privacy Policy Generator">
 </div>
 
 <div align="center"><strong>
-  <em>A simple web app to generate a generic privacy policy for your Android/iOS apps or websites</em>
+  <em>A simple web app to generate a generic privacy policy for your website</em>
 </strong><br>
 <a href="https://app-privacy-policy-generator.nisrulz.com/">Click here to access the webapp online</a></div>
 
@@ -40,7 +40,7 @@ Thanks for your interest in this :heart:
 
 ## Screenshots
 
-<img src="img/sc_1.png" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_2.png" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_3.png" alt="Free & Open Source Privacy Policy Generator" width=360 />
+<img src="img/sc_1.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_2.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_3.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 />
 
 ## License
 

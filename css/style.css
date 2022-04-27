@@ -121,7 +121,7 @@ img.social-logo {
 #page-404 {
   color: #888;
   display: table;
-  font-family: sans-serif;
+  font-family: 'League Spartan', sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -132,7 +132,7 @@ img.social-logo {
   margin: 2em auto;
 }
 #page-404 h1 {
-  color: white;
+  color: black;
   font-size: 4em;
   font-weight: 600;
   text-align: center;
@@ -141,7 +141,7 @@ img.social-logo {
   margin: 0 auto;
   width: 50%;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 2em;
   font-weight: 200;
 }
