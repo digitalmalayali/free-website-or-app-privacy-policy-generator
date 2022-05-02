@@ -20,261 +20,138 @@
  
 var thirdPartyServicesJsonArray = [
   {
-    "name": "Google Play Services",
-    "model": "gps",
-    "gps": true,
-    "logo": "images/third_party_logos/gps.png",
+    "name": "Google Analytics",
+    "model": "google",
+    "google": true,
+    "logo": "images/third_party_logos/google.svg",
     "link": {
-      "privacy": "https://www.google.com/policies/privacy/",
-      "terms": "https://policies.google.com/terms"
-    }
-  },
-  {
-    "name": "AdMob",
-    "model": "admob",
-    "admob": false,
-    "logo": "images/third_party_logos/admob.png",
-    "link": {
-      "privacy": "https://support.google.com/admob/answer/6128543?hl=en",
-      "terms": "https://developers.google.com/admob/terms"
+      "privacy": "https://policies.google.com/privacy"
     }
   },
   {
     "name": "Google Analytics for Firebase",
     "model": "firebase",
     "firebase": false,
-    "logo": "images/third_party_logos/firebase.png",
+    "logo": "images/third_party_logos/firebase.svg",
     "link": {
-      "privacy": "https://firebase.google.com/policies/analytics",
-      "terms": "https://firebase.google.com/terms/analytics"
+      "privacy": "https://firebase.google.com/policies/analytics"
     }
   },
   {
-    "name": "Firebase Crashlytics",
-    "model": "crashlytics",
-    "crashlytics": false,
-    "logo": "images/third_party_logos/firebase.png",
+    "name": "YouTube",
+    "model": "yt",
+    "yt": false,
+    "logo": "images/third_party_logos/yt.png",
     "link": {
-      "privacy": "https://firebase.google.com/support/privacy/",
-      "terms": "https://firebase.google.com/terms/crashlytics"
+      "privacy": "https://policies.google.com/privacy"
+    }
+  },
+  {
+    "name": "Twitter",
+    "model": "twitter",
+    "twitter": false,
+    "logo": "images/third_party_logos/twitter.svg",
+    "link": {
+      "privacy": "https://twitter.com/privacy"
     }
   },
   {
     "name": "Facebook",
     "model": "facebook",
     "facebook": false,
-    "logo": "images/third_party_logos/facebook.png",
+    "logo": "images/third_party_logos/facebook.svg",
     "link": {
-      "privacy": "https://www.facebook.com/about/privacy/update/printable",
-      "terms": "https://www.facebook.com/legal/terms/plain_text_terms"
+      "privacy": "https://www.facebook.com/about/privacy/"
     }
   },
   {
-    "name": "Fabric",
-    "model": "fabric",
-    "fabric": false,
-    "logo": "images/third_party_logos/fabric.png",
+    "name": "WhatsApp",
+    "model": "whatsapp",
+    "whatsapp": false,
+    "logo": "images/third_party_logos/whatsapp.svg",
     "link": {
-      "privacy": "https://policies.google.com/privacy",
-      "terms": "https://fabric.io/terms/fabric"
+      "privacy": "https://www.whatsapp.com/legal/privacy-policy/"
+    }
+  },
+    {
+    "name": "Instagram",
+    "model": "insta",
+    "insta": false,
+    "logo": "images/third_party_logos/insta.svg",
+    "link": {
+      "privacy": "https://help.instagram.com/519522125107875"
+    }
+  },
+  {
+    "name": "Messenger",
+    "model": "msgr",
+    "msgr": false,
+    "logo": "images/third_party_logos/msgr.svg",
+    "link": {
+      "privacy": "https://www.messenger.com/privacy"
+    }
+  },
+  {
+    "name": "Disqus",
+    "model": "disqus",
+    "disqus": false,
+    "logo": "images/third_party_logos/disqus.svg",
+    "link": {
+      "privacy": "https://help.disqus.com/en/articles/1717103-disqus-privacy-policy"
+    }
+  },
+  {
+    "name": "Microsoft Clarity",
+    "model": "clarity",
+    "clarity": false,
+    "logo": "images/third_party_logos/clarity.png",
+    "link": {
+      "privacy": "https://privacy.microsoft.com/en-gb/privacystatement"
     }
   },
   {
     "name": "Matomo",
-    "model": "piwik",
-    "piwik": false,
-    "logo": "images/third_party_logos/piwik.png",
+    "model": "matomo",
+    "matomo": false,
+    "logo": "images/third_party_logos/matomo.png",
     "link": {
-      "privacy": "https://matomo.org/privacy-policy/",
-      "terms": "https://matomo.org/terms"
+      "privacy": "https://matomo.org/privacy-policy/"
     }
   },
   {
-    "name": "Clicky",
-    "model": "clicky",
-    "clicky": false,
-    "logo": "images/third_party_logos/clicky.png",
+    "name": "Statcounter",
+    "model": "statcounter",
+    "statcounter": false,
+    "logo": "images/third_party_logos/statcounter.svg",
     "link": {
-      "privacy": "https://clicky.com/terms#privacy",
-      "terms": "https://clicky.com/terms/"
-    }
-  },
-  {
-    "name": "Flurry Analytics",
-    "model": "flurry",
-    "flurry": false,
-    "logo": "images/third_party_logos/flurry.png",
-    "link": {
-      "privacy": "https://privacy.oath.com",
-      "terms": "https://developer.yahoo.com/flurry/legal-privacy/terms-service/flurry-analytics-terms-service.html"
-    }
-  },
-  {
-    "name": "Appodeal",
-    "model": "appodeal",
-    "appodeal": false,
-    "logo": "images/third_party_logos/appodeal.png",
-    "link": {
-      "privacy": "https://www.appodeal.com/home/privacy-policy/",
-      "terms": "https://www.appodeal.com/home/terms-of-service/"
+      "privacy": "https://statcounter.com/about/legal/"
     }
   },
   {
     "name": "Fathom Analytics",
     "model": "fathom",
     "fathom": false,
-    "logo": "images/third_party_logos/fathom.png",
+    "logo": "images/third_party_logos/fathom.ico",
     "link": {
-      "privacy": "https://usefathom.com/privacy/",
-      "terms": "https://usefathom.com/terms/"
+      "privacy": "https://usefathom.com/privacy/"
     }
   },
   {
-    "name": "Unity",
-    "model": "unity",
-    "unity": false,
-    "logo": "images/third_party_logos/unity.png",
+    "name": "Yandex.Metrika",
+    "model": "yandex",
+    "yandex": false,
+    "logo": "images/third_party_logos/yandex.svg",
     "link": {
-      "privacy": "https://unity3d.com/legal/privacy-policy",
-      "terms": "https://unity3d.com/legal/terms-of-service"
+      "privacy": "https://yandex.com/legal/privacy/"
     }
   },
   {
-    "name": "SDKBOX",
-    "model": "sdkbox",
-    "sdkbox": false,
-    "logo": "images/third_party_logos/sdkbox.png",
+    "name": "Hubspot",
+    "model": "hubspot",
+    "hubspot": false,
+    "logo": "images/third_party_logos/hubspot.svg",
     "link": {
-      "privacy": "https://www.sdkbox.com/privacy",
-      "terms": "https://www.sdkbox.com/privacy"
-    }
-  },
-  {
-    "name": "GameAnalytics",
-    "model": "gameanalytics",
-    "gameanalytics": false,
-    "logo": "images/third_party_logos/gameanalytics.png",
-    "link": {
-      "privacy": "https://gameanalytics.com/privacy",
-      "terms": "https://gameanalytics.com/terms"
-    }
-  },
-  {
-    "name": "One Signal",
-    "model": "onesignal",
-    "onesignal": false,
-    "logo": "images/third_party_logos/one_signal.png",
-    "link": {
-      "privacy": "https://onesignal.com/privacy_policy",
-      "terms": "https://onesignal.com/tos"
-    }
-  },
-  {
-    "name": "Expo",
-    "model": "expo",
-    "expo": false,
-    "logo": "images/third_party_logos/expo.png",
-    "link": {
-      "privacy": "https://expo.io/privacy",
-      "terms": "https://expo.io/terms"
-    }
-  },
-  {
-    "name": "Sentry",
-    "model": "sentry",
-    "sentry": false,
-    "logo": "images/third_party_logos/sentry.png",
-    "link": {
-      "privacy": "https://sentry.io/privacy/",
-      "terms": "https://sentry.io/terms/"
-    }
-  },
-  {
-    "name": "AppLovin",
-    "model": "applovin",
-    "applovin": false,
-    "logo": "images/third_party_logos/applovin.png",
-    "link": {
-      "privacy": "https://www.applovin.com/privacy/",
-      "terms": "https://www.applovin.com/terms/"
-    }
-  },
-  {
-    "name": "Vungle",
-    "model": "vungle",
-    "vungle": false,
-    "logo": "images/third_party_logos/vungle.png",
-    "link": {
-      "privacy": "https://vungle.com/privacy/"
-    }
-  },
-  {
-    "name": "StartApp",
-    "model": "startapp",
-    "startapp": false,
-    "logo": "images/third_party_logos/startapp.png",
-    "link": {
-      "privacy": "https://www.startapp.com/privacy/",
-      "terms": "https://www.startapp.com/policy/publisher-terms/"
-    }
-  },
-  {
-    "name": "AdColony",
-    "model": "adcolony",
-    "adcolony": false,
-    "logo": "images/third_party_logos/adcolony.png",
-    "link": {
-      "privacy": "https://www.adcolony.com/privacy-policy/"
-    }
-  },
-  {
-    "name": "Amplitude",
-    "model": "amplitude",
-    "amplitude": false,
-    "logo": "images/third_party_logos/amplitude.png",
-    "link": {
-      "privacy": "https://amplitude.com/privacy",
-      "terms": "https://amplitude.com/terms"
-    }
-  },
-  {
-    "name": "Adjust",
-    "model": "adjust",
-    "adjust": false,
-    "logo": "images/third_party_logos/adjust.png",
-    "link": {
-      "privacy": "https://www.adjust.com/terms/privacy-policy",
-      "terms": "https://www.adjust.com/terms/general-terms-and-conditions"
-    }
-  },
-  {
-    "name": "Mapbox",
-    "model": "mapbox",
-    "mapbox": false,
-    "logo": "images/third_party_logos/mapbox.png",
-    "link": {
-      "privacy": "https://www.mapbox.com/legal/privacy",
-      "terms": "https://www.mapbox.com/legal/tos"
-    }
-  },
-  {
-    "name": "Godot",
-    "model": "godot",
-    "godot": false,
-    "logo": "images/third_party_logos/godot.png",
-    "link": {
-      "privacy": "https://godotengine.org/privacy-policy",
-      "terms": "https://godotengine.org/license"
-    }
-  },
-  {
-    "name": "Segment",
-    "model": "segment",
-    "sentry": false,
-    "logo": "images/third_party_logos/segment.png",
-    "link": {
-      "privacy": "https://segment.com/legal/privacy/",
-      "terms": "https://segment.com/legal/terms/"
+      "privacy": "https://legal.hubspot.com/privacy-policy"
     }
   },
   {
@@ -283,8 +160,7 @@ var thirdPartyServicesJsonArray = [
     "mixpanel": false,
     "logo": "images/third_party_logos/mixpanel.png",
     "link": {
-      "privacy": "https://mixpanel.com/legal/privacy-policy/",
-      "terms": "https://mixpanel.com/legal/terms-of-use/"
+      "privacy": "https://mixpanel.com/legal/privacy-policy/"
     }
   }
 ]
