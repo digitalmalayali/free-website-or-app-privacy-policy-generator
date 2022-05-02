@@ -30,6 +30,8 @@ var app = new Vue({
 	areOrAm: "[are/am]",
     devName: "",
     companyName: "",
+	companyAdd: "",
+	companyAddIn: "",
     devOrCompanyName: "[Developer/Company name]",
     effectiveFromDate: new Date().toISOString().slice(0, 10),
     thirdPartyServices: thirdPartyServicesJsonArray,
@@ -61,8 +63,8 @@ var app = new Vue({
             return
           }
 
-          if (this.webContact.length == 0 || this.webContact == "" || this.webContact == null || this.webContact == "Please provide contact info!") {
-            this.webContact = "Please provide contact info!"
+          if (this.webContact.length == 0 || this.webContact == "" || this.webContact == null || this.webContact == "Please provide the contact email!") {
+            this.webContact = "Please provide the contact email!"
             return
           }
 		  
@@ -127,6 +129,13 @@ var app = new Vue({
         this.meOrUs = "us"
 		this.areOrAm = "are"
       }
+	  
+	  if (this.companyAdd === "") {
+        this.companyAddIn = ""
+      } else {
+        this.companyAddIn = "Our Address: " + this.companyAdd
+      }
+	  
     },
     togglePrivacyModalVisibility: function () {
       this.generate()
