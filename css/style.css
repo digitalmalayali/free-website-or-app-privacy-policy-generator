@@ -204,7 +204,7 @@ input[type=checkbox] + label {
   position: relative;
   padding-left: 30px;
   margin-bottom: 20px;
-  font: 14px/20px "Open Sans", Arial, sans-serif;
+  font: 16px/20px 'League Spartan', sans-serif;
   color: black;
   cursor: pointer;
   -webkit-user-select: none;
@@ -219,7 +219,7 @@ input[type=checkbox] + label:before {
   display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #6cc0e5;
+  border: 1px solid #00b4ff;
   position: absolute;
   left: 0;
   top: 0;
