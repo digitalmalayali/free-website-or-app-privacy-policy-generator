@@ -51,12 +51,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 	
   </head>
-  <body class="bg-pattern">
+  <body>
   
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQP83SR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<div id="particles-js"></div>
   
     <div id="app">
       <div class="container">
@@ -302,11 +304,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+	
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/to-markdown/3.1.1/to-markdown.min.js" integrity="sha256-2PIa0cHy6lNEesnk4/qokv291Whx/uhAy2V6WL2zmfo=" crossorigin="anonymous"></script>
     <script src="js/thirdpartyservices.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
     <script src="js/flycricket.js"></script>
-  </body>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	
+	<script>
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+	particlesJS.load('particles-js', '/js/particles.json', function() {
+	console.log('particles.json loaded');
+	});
+	</script>
+	
+</body>
 </html>
