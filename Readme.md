@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/logo.svg" alt="Free & Open Source Privacy Policy Generator Logo" width="100"><br><br>
+  <img src="images/logo.png" alt="Free & Open Source Privacy Policy Generator Logo" width="100"><br><br>
   <img src="img/banner.jpg" alt="Free & Open Source Privacy Policy Generator">
 </div>
 
