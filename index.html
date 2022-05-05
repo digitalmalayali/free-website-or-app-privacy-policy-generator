@@ -89,7 +89,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-1" v-if="wizardStep==1">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" src="images/app_icons/next.svg" @click="nextStep()"></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" src="images/app_icons/nextmain.svg" @click="nextStep()"></div>
             <div class="column box scrollable">
               <div class="control is-expanded">
                 <p class="help form-label">Website Name</p>
@@ -154,7 +154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-3" v-if="wizardStep==3">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_3.svg"><img class="center-block nav-btn" src="images/app_icons/prev.svg" @click="prevStep()"></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_3.svg"><div class="center-parent"><img class="child nav-btn" src="images/app_icons/prev.svg" @click="prevStep()"></div></div>
             <div class="column">
               <div class="box">
                 <ol>This Privacy Policy Generator is completely <b>FREE</b>.

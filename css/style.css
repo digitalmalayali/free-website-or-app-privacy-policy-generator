@@ -163,6 +163,9 @@ img.social-logo {
 
 .column.is-information .nav-btn {
   cursor: grab;
+  height: 5em;
+}
+.column.is-information .child.nav-btn {
   height: 3em;
 }
 .column.is-information .sidebar-img {
