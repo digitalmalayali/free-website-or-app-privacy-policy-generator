@@ -1,0 +1,23 @@
+{
+    "name": "Free & Open Source Privacy Policy Generator",
+    "short_name": "PP Generator",
+    "description": "A simple web app to generate a generic privacy policy for your website.",
+    "icons": [
+      {
+        "src": "images/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/ico"
+      },
+      // ...
+      {
+        "src": "images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#1b1b1b",
+    "background_color": "#1b1b1b"
+  }
+  
