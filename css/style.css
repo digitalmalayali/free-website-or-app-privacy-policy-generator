@@ -232,6 +232,9 @@ input[type=checkbox]:checked + label:before {
 
 #particles-js {
   background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   }
 
 .fc-powered-by {
