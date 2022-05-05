@@ -44,7 +44,9 @@ Thanks for your interest in this :heart:
 
 ## Screenshots 💻
 
-<img src="img/sc_1.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_2.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><img src="img/sc_3.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 />
+<img src="img/sc_1.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><br>
+<img src="img/sc_2.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 /><br>
+<img src="img/sc_3.jpg" alt="Free & Open Source Privacy Policy Generator" width=360 />
 
 ## License 📝
 
