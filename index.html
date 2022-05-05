@@ -323,6 +323,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/main.js"></script>
     <script src="js/flycricket.js"></script>
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 	
 	<script>
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */

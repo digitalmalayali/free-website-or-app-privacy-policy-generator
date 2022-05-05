@@ -4,13 +4,12 @@
     "description": "A simple web app to generate a generic privacy policy for your website.",
     "icons": [
       {
-        "src": "images/favicon.ico",
+        "src": "/images/icon-32.png",
         "sizes": "32x32",
-        "type": "image/ico"
+        "type": "image/png"
       },
-      // ...
       {
-        "src": "images/logo.png",
+        "src": "/images/logo.png",
         "sizes": "512x512",
         "type": "image/png"
       }
