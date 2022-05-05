@@ -84,6 +84,10 @@ img.social-logo {
   margin-right: 5px;
 }
 
+.button.is-primary {
+  margin-top: 0.7em;
+}
+
 .thirdparty-logo {
   height: 1.5em;
   padding-right: 8px;
@@ -168,6 +172,10 @@ img.social-logo {
 
 .box {
   margin-top: 0.8em;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 0.5em;
 }
 
 .box.final-box > a.button {
