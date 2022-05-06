@@ -20,7 +20,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
     <link rel="manifest" href="ppgenerator.webmanifest">
     <title>Free & Open Source Privacy Policy Generator</title>
     <meta charset="utf-8">
@@ -31,10 +31,12 @@
     <meta property="og:image" content="https://free-privacy-policy-generator.digitalmalayali.in/images/logo.png" />
     <meta property="og:url" content="https://free-privacy-policy-generator.digitalmalayali.in/" />
     <meta property="og:type" content="website" />
+    <meta name="description" content="A simple web app to generate a generic privacy policy for your website" />
     <meta name="keywords" content="Privacy Policy, Generator, Free, Open Source">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="copyright" content="Digital Malayali, Nishant Srivastava, Arthur Gareginyan">
     <meta name="author" content="Digital Malayali, contact@digitalmalayali.in">
+    <meta name="theme-color" content="#1b1b1b"/>
     <!-- Add to homescreen for Chrome on Android-->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/android-desktop.png">
@@ -42,6 +44,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Free & Open Source Privacy Policy Generator">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <!-- Tile icon for Win8 (144x144 + tile color)-->
     <meta name="msapplication-TileColor" content="#00b4ff">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -76,10 +79,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="content"><a href="https://www.digitalmalayali.in" target="_blank" rel="noopener noreferrer">
                     <h1>Free & Open Source <em>Privacy Policy</em> Generator</h1></a>
                     <h3>Generate a generic Privacy Policy for your website</h3>
-					<p>
-                    Modified with <span style="color:red">❤</span> by <a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer"><span style="color:blue">Digital Malayali</span>.<br> 
+					<p>Modified with <span style="color:red">❤</span> by <a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer"><span style="color:blue">Digital Malayali</span>.<br> 
 					</a>Based on the original web app by<a href="https://github.com/nisrulz/app-privacy-policy-generator" target="_blank" rel="noopener noreferrer"><span style="color:blue"> Nishant </span></a>and template by <a href="https://github.com/ArthurGareginyan/privacy-policy-template" target="_blank" rel="noopener noreferrer"><span style="color:blue">Arthur Gareginyan</span></a>.<br>
-					Illustrations from <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer"><span style="color:blue">unDraw.</span></a> For generating Privacy Policy for your app, <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer"><span style="color:blue">click here</span></a>.
+					Illustrations from <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer"><span style="color:blue">unDraw.</span></a> Generate privacy policy for your<a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer"><span style="color:blue"> Android/iOS app</span></a>.
 					</p>
 					<p>
 					<a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20by%20%40DigiMalayali.%20A%20modified%20%26%20lite%20version%20of%20the%20web%20app%20built%20by%20%40nisrulz%20and%20the%20template%20written%20by%20%40AGareginyan.%20%20%20%23privacypolicy%20%20%23generator%20%20%23webapp%20%20%20%20%F0%9F%91%87&url=https%3A%2F%2Ffree-privacy-policy-generator.digitalmalayali.in%2F" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="images/social_icons/twitter.svg" alt="Twitter"></a>
@@ -96,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-1" v-if="wizardStep==1">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" src="images/app_icons/next.svg" @click="nextStep()"></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Welcome to Privacy Policy Generator" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" alt="Next" src="images/app_icons/next.svg" @click="nextStep()"></div>
             <div class="column box scrollable">
               <div class="control is-expanded">
                 <p class="help form-label">Website Name</p>
@@ -147,8 +149,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-2" v-if="wizardStep==2">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_2.svg">
-              <div class="center-parent"><img class="child nav-btn" src="images/app_icons/prev.svg" @click="prevStep()"><img class="child nav-btn" src="images/app_icons/next.svg" @click="nextStep()"></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Illustration to depict selections" src="images/app_graphics/step_2.svg">
+              <div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg" @click="prevStep()"><img class="child nav-btn" alt="Next" src="images/app_icons/next.svg" @click="nextStep()"></div>
             </div>
 			<div class="column">
             <div class="column box scrollable"><b>Include links to Third Party Services</b><a v-for="item in thirdPartyServices" rel="noopener noreferrer"><br>
@@ -165,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="section" id="step-3" v-if="wizardStep==3">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" src="images/app_graphics/step_3.svg"><div class="center-parent"><img class="child nav-btn" src="images/app_icons/prev.svg" @click="prevStep()"></div></div>
+            <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Illustration of a computer" src="images/app_graphics/step_3.svg"><div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg" @click="prevStep()"></div></div>
             <div class="column">
               <div class="box">
                 <ol>This Privacy Policy Generator is completely <b>FREE</b>.
@@ -324,6 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/flycricket.js"></script>
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+  <!-- Service Worker-->
   <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
