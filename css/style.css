@@ -7,6 +7,10 @@ li {
   margin: 10px;
 }
 
+.txt {
+  color: blue;
+}
+
 .hero.is-primary {
   background-color: transparent;
 }
@@ -73,15 +77,6 @@ img.social-logo {
   display: flex;
   overflow-y: auto;
   flex-direction: column;
-}
-
-.heart-logo {
-  height: 1em;
-}
-
-.button-logo {
-  height: 1em;
-  margin-right: 5px;
 }
 
 .button.is-primary {
