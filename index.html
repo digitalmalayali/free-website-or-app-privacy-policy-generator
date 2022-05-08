@@ -110,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
 			  <div class="control is-expanded">
                 <p class="help form-label">Website URL</p>
-                <input class="input" type="text" required v-model="siteURL" placeholder="www.digitalmalayali.in" v-bind:class="{ 'is-danger': (siteURL == 'Please provide your website URL!' || siteURL.length == 0) }">
+                <input class="input" type="text" required v-model="siteURL" placeholder="https://www.digitalmalayali.in" v-bind:class="{ 'is-danger': (siteURL == 'Please provide your website URL!' || siteURL.length == 0) }">
               </div>
               <div class="control">
                 <p class="help form-label">Policy Effective Date</p>
@@ -185,16 +185,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>...or adding a review/comment in the project&apos;s <a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator/discussions" target="_blank" rel="noopener noreferrer">Discussions &#128172;</a></p>
               </div>
               <div class="box final-box"><b>All Done!</b><br>
-                <p>Now sit back and choose the type of document you want to generate: </p><br><a class="button is-primary" @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br><br>
+                <p>Now sit back and select the generated privacy policy. </p><a class="button is-primary" @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br><br>
                 <p class="has-text-grey-light">The accuracy of the generated privacy policy on this website is not legally binding. Use at your own risk.</p>
                 <p><a class="has-text-danger" @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer">Read the full Disclaimer here</a></p>
               </div>
-              <form id="fc-form" action="https://app.flycricket.com/import/privacy" method="post" target="_blank">
-                <input type="hidden" name="fc-referrer" value="digitalmalayali">
-                <input id="fc-terms" type="hidden" name="fc-terms">
-                <input id="fc-body" type="hidden" name="fc-privacy">
-                <input id="fc-name" type="hidden" name="fc-name" v-model="webName">
-              </form>
             </div>
           </div>
         </section>
@@ -281,9 +275,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <button class="button is-success" @click="getHtml('privacy_content','privacy_txtarea')">HTML</button>
               <button class="button is-success" @click="getMarkdown('privacy_content', 'privacy_txtarea')">Markdown</button>
               <button class="button is-success" v-if="contentRenderType!=1" @click="preview()">Preview</button>
-              <div style="flex:1">
-                <button class="button is-info" @click="fc_deploy()" style="float:right;">Deploy to Flycricket</button>
-              </div>
             </footer>
           </div>
         </div> 
@@ -323,8 +314,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/thirdpartyservices.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/flycricket.js"></script>
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <!-- Service Worker-->
   <script>

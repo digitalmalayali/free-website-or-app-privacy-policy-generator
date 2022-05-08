@@ -99,6 +99,10 @@ img.social-logo {
   padding-top: 0.4em;
 }
 
+.columns {
+  margin-top: -1.8rem;
+}
+
 .column.box {
   padding: 1em;
 }
@@ -234,8 +238,3 @@ input[type=checkbox]:checked + label:before {
   height: 100%;
   position: absolute;
   }
-
-.fc-powered-by {
-  font-size: 0.6em;
-  color: gray;
-}
