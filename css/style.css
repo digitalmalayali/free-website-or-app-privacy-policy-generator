@@ -1,3 +1,12 @@
+#dark-mode-toggle-1 {
+  --dark-mode-toggle-dark-icon: url("/images/sun.svg");
+  --dark-mode-toggle-light-icon: url("/images/moon.svg");
+  --dark-mode-toggle-icon-size: 2.5rem;
+  margin: 37rem 0 0 1rem;
+  position: fixed;
+  z-index: 1;
+}
+
 body, html {
   background: white;
   font-family: 'League Spartan', sans-serif;
@@ -7,8 +16,12 @@ li {
   margin: 10px;
 }
 
-.txt {
+.txt, a {
   color: blue;
+}
+
+.txt:hover, a:hover {
+  color:#00B4FF;
 }
 
 .hero.is-primary {
