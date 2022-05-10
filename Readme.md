@@ -25,7 +25,7 @@ For generating privacy policy for apps, <a href="https://app-privacy-policy-gene
 
 This project is a modified version of the original web app by [Nishant Srivastava](https://github.com/nisrulz/nisrulz.github.io#nishant-srivastava) and template written by [Arthur Gareginyan](https://github.com/ArthurGareginyan/privacy-policy-template). Please consider supporting them.
 
-Illustrations by Katerina Limpitsouni via [unDraw](https://undraw.co/).
+Illustrations by Katerina Limpitsouni via [unDraw](https://undraw.co/). Background using [particles.js](https://github.com/VincentGarreau/particles.js/). Darkmode from [GoogleChromeLabs](https://github.com/GoogleChromeLabs/dark-mode-toggle). 
 
 ## Ways You Can Help/Support this project 💕
 
