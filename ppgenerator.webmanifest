@@ -1,28 +1,27 @@
 {
-    "name": "Free & Open Source Privacy Policy Generator",
-    "short_name": "PP Generator",
-    "description": "A simple web app to generate a generic privacy policy for your website.",
-    "icons": [
-      {
-        "src": "/images/icon-32.png",
-        "sizes": "32x32",
-        "type": "image/png"
-      },
-      {
-        "src": "/images/logo.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      },
-      {
-        "src": "/images/maskable_icon.png",
-        "sizes": "787x787",
-        "type": "image/png",
-        "purpose": "maskable"
-      }
-    ],
-    "start_url": "/index.html",
-    "display": "fullscreen",
-    "theme_color": "#080404",
-    "background_color": "#080404"
-  }
-  
+  "name": "Free & Open Source Privacy Policy Generator",
+  "short_name": "PP Generator",
+  "description": "A simple web app to generate a generic privacy policy for your website.",
+  "icons": [
+    {
+      "src": "/images/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/maskable_icon.png",
+      "sizes": "787x787",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#080404",
+  "background_color": "#080404"
+}

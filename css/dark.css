@@ -7,301 +7,339 @@
   z-index: 1;
 }
 
-body, html {
-    background: #080404;
-    font-family: 'League Spartan', sans-serif;
-  }
+body,
+html {
+  background: #080404;
+  font-family: 'League Spartan', sans-serif;
+}
 
-  body, .textarea {
-      color: #d0d5df;
-  }
+body,
+.textarea {
+  color: #d0d5df;
+}
 
-  .input::-moz-placeholder, .textarea::-moz-placeholder, .select select::-moz-placeholder {
-      color: #7e7e7e;
-  }
-  
-  .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder, .select select::-webkit-input-placeholder {
-      color: #7e7e7e;
-  }
-  
-  .input:-moz-placeholder, .textarea:-moz-placeholder, .select select:-moz-placeholder {
-      color: #7e7e7e;
-  }
-  
-  .input:-ms-input-placeholder, .textarea:-ms-input-placeholder, .select select:-ms-input-placeholder {
-      color: #7e7e7e;
-  }
-  
-  li {
-    margin: 10px;
-  }
+.input::-moz-placeholder,
+.textarea::-moz-placeholder,
+.select select::-moz-placeholder {
+  color: #7e7e7e;
+}
 
-  .txt, a {
-      color:#fdbe4a;
-  }
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder,
+.select select::-webkit-input-placeholder {
+  color: #7e7e7e;
+}
 
-  .txt:hover, a:hover {
-      color: #fdd64a;
-  }
-  
-  .hero.is-primary {
-    background-color: transparent;
-  }
-  .hero-body {
-    padding: 1.5rem 1.5rem;
-  }
-  .hero-body .content {
-    text-align: center;
-    color: #d0d5df;
-  }
-  .hero-body .content h1 {
-    font-size: 2.8em;
-    font-weight: 600;
-    margin-bottom: 0.3em;
-    color: #eee;
-  }
-  .hero-body .content h3 {
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: #eee;
-  }
-  img.social-logo {
-    display: inline-block;
-    margin-right: 10px;
-    text-indent: -9999px;
-    width: 20px;
-  }
+.input:-moz-placeholder,
+.textarea:-moz-placeholder,
+.select select:-moz-placeholder {
+  color: #7e7e7e;
+}
 
-  img.social-logo.d {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    opacity: 92%; 
-  }
-  
-  #app > :nth-child(2) {
-    padding-top: 0;
-  }
-  
-  .help.form-label {
-    font-size: 1em;
-    font-weight: 400;
-    color: #d0d5df;
-  }
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder,
+.select select:-ms-input-placeholder {
+  color: #7e7e7e;
+}
 
-  .input, .select select {
-    background-color: #080404;
-    color: #fdbe4a;
-  }
-  
-  .center-block {
-    margin: 0 auto;
-    display: block;
-  }
+li {
+  margin: 10px;
+}
 
-  .box {
-      background-color: #121111;
-      color: #eee;
-  }
-  
-  .box span.icon {
-    float: right;
-    font-size: 1.7em;
-    padding: 2rem 2rem 0 0;
-  }
-  
-  .is-large.fab {
-    font-size: 7em;
-  }
-  .is-large.fas {
-    font-size: 5em;
-    margin-left: 0.2em;
-  }
-  
-  .menu-list li a:hover {
-    background: #d9d9d9;
-  }
-  
-  .scrollable {
-    height: 65vh;
-    display: flex;
-    overflow-y: auto;
-    flex-direction: column;
-  }
-  
-  .button.is-primary {
-    margin-top: 0.7em;
-  }
-  
-  .thirdparty-logo {
-    height: 1.5em;
-    padding-right: 8px;
-    vertical-align: middle;
-  }
-  
-  #step-1, #step-2, #step-3 {
-    padding-bottom: 0.3em;
-    padding-top: 0.4em;
-  }
-  
-  .columns {
-    margin-top: -1.8rem;
-  }
-  
-  .column.box {
-    padding: 1em;
-  }
-  
-  #page-404 {
-    color: #888;
-    display: table;
-    font-family: 'League Spartan', sans-serif;
-    height: 100%;
-    text-align: center;
-    width: 100%;
-  }
-  #page-404 > div {
-    display: table-cell;
-    vertical-align: middle;
-    margin: 2em auto;
-  }
-  #page-404 h1 {
-    color: #eee;
-    font-size: 4em;
-    font-weight: 600;
-    text-align: center;
-  }
-  #page-404 p {
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-    color: #eee;
-    font-size: 2em;
-    font-weight: 200;
-  }
-  
-  .modal-card-head, .modal-card-foot {
-    background-color: #121111;
-  }
+.txt,
+a {
+  color: #fdbe4a;
+}
 
-  .modal-card-body, .textarea {
-    background-color: #080404; 
-  }
+.txt:hover,
+a:hover {
+  color: #fdd64a;
+}
 
-  .modal-card-head, .modal-card-foot, .textarea {
-      border-color: #fdbe4a;
-  }
+.hero.is-primary {
+  background-color: transparent;
+}
 
-  strong, .modal-card-title {
-      color: #eee;
-  }
+.hero-body {
+  padding: 1.5rem 1.5rem;
+}
 
-  .modal-card-body ul {
-    list-style-type: disc;
-  }
-  .modal-card-body li {
-    margin-left: 2.5em;
-  }
-  .modal-card-body textarea {
-    height: 66%;
-    width: 100%;
-  }
-  
-  .center-parent {
-    width: 100%;
-    text-align: center;
-  }
-  .center-parent > .child {
-    display: inline-block;
-    margin: 2px;
-  }
-  
-  .column.is-information .nav-btn {
-    cursor: grab;
-    height: 3em;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    opacity: 92%;
-  }
-  .column.is-information .sidebar-img {
-    pointer-events: none;
-    height: 21em;
-    padding: 2em;
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    opacity: 92%;
-  }
-  
-  .modal-card-body.modal-box {
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-  }
-  .modal-card-body.modal-box textarea {
-    height: 100%;
-  }
-  
-  .box {
-    margin-top: 0.8em;
-  }
-  
-  .box:not(:last-child) {
-    margin-bottom: 0.5em;
-  }
-  
-  .box.final-box > a.button {
-    margin-right: 0.2em;
-  }
-  
-  .no-select {
-    user-select: none;
-  }
-  
-  input[type=checkbox] {
-    display: none;
-  }
-  input[type=checkbox] + label {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
-    font: 16px/20px 'League Spartan', sans-serif;
-    color: #eee;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-  }
-  input[type=checkbox] + label:last-child {
-    margin-bottom: 0;
-  }
-  input[type=checkbox] + label:before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #fdbe4a;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.6;
-    -webkit-transition: all 0.12s, border-color 0.08s;
-    transition: all 0.12s, border-color 0.08s;
-  }
-  input[type=checkbox]:checked + label:before {
-    width: 10px;
-    top: -5px;
-    left: 5px;
-    border-radius: 0;
-    opacity: 1;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  #particles-js {
-    background-color: #080404;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    }
+.hero-body .content {
+  text-align: center;
+  color: #d0d5df;
+}
+
+.hero-body .content h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  color: #eee;
+}
+
+.hero-body .content h3 {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #eee;
+}
+
+img.social-logo {
+  display: inline-block;
+  margin-right: 10px;
+  text-indent: -9999px;
+  width: 20px;
+}
+
+img.social-logo.d {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  opacity: 92%;
+}
+
+#app> :nth-child(2) {
+  padding-top: 0;
+}
+
+.help.form-label {
+  font-size: 1em;
+  font-weight: 400;
+  color: #d0d5df;
+}
+
+.input,
+.select select {
+  background-color: #080404;
+  color: #fdbe4a;
+}
+
+.center-block {
+  margin: 0 auto;
+  display: block;
+}
+
+.box {
+  background-color: #121111;
+  color: #eee;
+}
+
+.box span.icon {
+  float: right;
+  font-size: 1.7em;
+  padding: 2rem 2rem 0 0;
+}
+
+.is-large.fab {
+  font-size: 7em;
+}
+
+.is-large.fas {
+  font-size: 5em;
+  margin-left: 0.2em;
+}
+
+.menu-list li a:hover {
+  background: #d9d9d9;
+}
+
+.scrollable {
+  height: 65vh;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.button.is-primary {
+  margin-top: 0.7em;
+}
+
+.thirdparty-logo {
+  height: 1.5em;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+#step-1,
+#step-2,
+#step-3 {
+  padding-bottom: 0.3em;
+  padding-top: 0.4em;
+}
+
+.columns {
+  margin-top: -1.8rem;
+}
+
+.column.box {
+  padding: 1em;
+}
+
+#page-404 {
+  color: #888;
+  display: table;
+  font-family: 'League Spartan', sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+#page-404>div {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 2em auto;
+}
+
+#page-404 h1 {
+  color: #eee;
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+#page-404 p {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  color: #eee;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.modal-card-head,
+.modal-card-foot {
+  background-color: #121111;
+}
+
+.modal-card-body,
+.textarea {
+  background-color: #080404;
+}
+
+.modal-card-head,
+.modal-card-foot,
+.textarea {
+  border-color: #fdbe4a;
+}
+
+strong,
+.modal-card-title {
+  color: #eee;
+}
+
+.modal-card-body ul {
+  list-style-type: disc;
+}
+
+.modal-card-body li {
+  margin-left: 2.5em;
+}
+
+.modal-card-body textarea {
+  height: 66%;
+  width: 100%;
+}
+
+.center-parent {
+  width: 100%;
+  text-align: center;
+}
+
+.center-parent>.child {
+  display: inline-block;
+  margin: 2px;
+}
+
+.column.is-information .nav-btn {
+  cursor: grab;
+  height: 3em;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  opacity: 92%;
+}
+
+.column.is-information .sidebar-img {
+  pointer-events: none;
+  height: 21em;
+  padding: 2em;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  opacity: 92%;
+}
+
+.modal-card-body.modal-box {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.modal-card-body.modal-box textarea {
+  height: 100%;
+}
+
+.box {
+  margin-top: 0.8em;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.box.final-box>a.button {
+  margin-right: 0.2em;
+}
+
+.no-select {
+  user-select: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]+label {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  font: 16px/20px 'League Spartan', sans-serif;
+  color: #eee;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type=checkbox]+label:last-child {
+  margin-bottom: 0;
+}
+
+input[type=checkbox]+label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fdbe4a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+input[type=checkbox]:checked+label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#particles-js {
+  background-color: #080404;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

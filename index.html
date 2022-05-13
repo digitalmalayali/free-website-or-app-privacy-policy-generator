@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 
+
+<head>
+  <!-- 
     Free & Open Source Privacy Policy Generator: A simple web app to generate a generic privacy policy for your website
     
     Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
@@ -20,320 +21,390 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
-    <link rel="manifest" href="ppgenerator.webmanifest">
-    <title>Free & Open Source Privacy Policy Generator</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:site_name" content="Free & Open Source Privacy Policy Generator" />
-    <meta property="og:title" content="Free & Open Source Privacy Policy Generator" />
-    <meta property="og:description" content="A simple web app to generate a generic privacy policy for your website" />
-    <meta property="og:image" content="https://free-privacy-policy-generator.digitalmalayali.in/images/logo.png" />
-    <meta property="og:url" content="https://free-privacy-policy-generator.digitalmalayali.in/" />
-    <meta property="og:type" content="website" />
-    <meta name="description" content="A simple web app to generate a generic privacy policy for your website" />
-    <meta name="keywords" content="Privacy Policy, Generator, Free, Open Source">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="copyright" content="Digital Malayali, Nishant Srivastava, Arthur Gareginyan">
-    <meta name="author" content="Digital Malayali, contact@digitalmalayali.in">
-    <meta name="theme-color" content="#080404"/>
-    <!-- Add to homescreen for Chrome on Android-->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-    <!-- Add to homescreen for Safari on iOS-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Free & Open Source Privacy Policy Generator">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <!-- Tile icon for Win8 (144x144 + tile color)-->
-    <meta name="msapplication-TileColor" content="#00b4ff">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css" media="(prefers-color-scheme: light)">
-    <script type="module" src="https://unpkg.com/dark-mode-toggle" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
-	
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TQP83SR');</script>
-<!-- End Google Tag Manager -->
-	
-  </head>
-  <body>
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
+  <link rel="manifest" href="ppgenerator.webmanifest">
+  <title>Free & Open Source Privacy Policy Generator</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:site_name" content="Free & Open Source Privacy Policy Generator" />
+  <meta property="og:title" content="Free & Open Source Privacy Policy Generator" />
+  <meta property="og:description" content="A simple web app to generate a generic privacy policy for your website" />
+  <meta property="og:image" content="https://free-privacy-policy-generator.digitalmalayali.in/images/logo.png" />
+  <meta property="og:url" content="https://free-privacy-policy-generator.digitalmalayali.in/" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="A simple web app to generate a generic privacy policy for your website" />
+  <meta name="keywords" content="Privacy Policy, Generator, Free, Open Source">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="copyright" content="Digital Malayali, Nishant Srivastava, Arthur Gareginyan">
+  <meta name="author" content="Digital Malayali, contact@digitalmalayali.in">
+  <meta name="theme-color" content="#080404" />
+  <!-- Add to homescreen for Chrome on Android-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+  <!-- Add to homescreen for Safari on iOS-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Free & Open Source Privacy Policy Generator">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <!-- Tile icon for Win8 (144x144 + tile color)-->
+  <meta name="msapplication-TileColor" content="#00b4ff">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" media="(prefers-color-scheme: light)">
+  <script type="module" src="https://unpkg.com/dark-mode-toggle" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TQP83SR');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQP83SR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQP83SR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<div id="particles-js"></div>
+  <div id="particles-js"></div>
 
-<dark-mode-toggle
-  id="dark-mode-toggle-1";>
-</dark-mode-toggle>
-  
-    <div id="app">
-      <div class="container">
-        <section class="hero is-primary">
-          <div class="hero-body">
-            <div class="columns">
-              <div class="column">
-                <div class="content"><a href="https://www.digitalmalayali.in" target="_blank" rel="noopener noreferrer">
-                    <h1>Free & Open Source <em>Privacy Policy</em> Generator</h1></a>
-                    <h3>Generate a generic Privacy Policy for your website</h3>
-					<p>Modified with <span style="color: red">❤</span> by <a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer"><span class="txt">Digital Malayali</span>.<br> 
-					</a>Based on the original web app by<a href="https://github.com/nisrulz/app-privacy-policy-generator" target="_blank" rel="noopener noreferrer"><span class="txt"> Nishant </span></a>and template by <a href="https://github.com/ArthurGareginyan/privacy-policy-template" target="_blank" rel="noopener noreferrer"><span class="txt">Arthur Gareginyan</span></a>.<br>
-					Illustrations from <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer"><span class="txt">unDraw.</span></a> Generate privacy policy for your<a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer"><span class="txt"> Android/iOS app</span></a>.
-					</p>
-					<p>
-					<a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20by%20%40DigiMalayali.%20A%20modified%20%26%20lite%20version%20of%20the%20web%20app%20built%20by%20%40nisrulz%20and%20the%20template%20written%20by%20%40AGareginyan.%20%20%20%23privacypolicy%20%20%23generator%20%20%23webapp%20%20%20%20%F0%9F%91%87&url=https%3A%2F%2Ffree-privacy-policy-generator.digitalmalayali.in%2F" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="images/social_icons/twitter.svg" alt="Twitter"></a>
-					<a href="https://reddit.com/submit?url=https://free-privacy-policy-generator.digitalmalayali.in/&amp;title=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="images/social_icons/reddit.svg" alt="Reddit"></a>
-					<a href="whatsapp://send/?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!%20https://free-privacy-policy-generator.digitalmalayali.in/" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="images/social_icons/whatsapp.svg" alt="WhatsApp"></a>
-					<a href="https://t.me/share/url?url=https://free-privacy-policy-generator.digitalmalayali.in/&text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="images/social_icons/telegram.svg" alt="Telegram"></a>
-					<a @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer"><img class="social-logo d" src="images/app_icons/disclaimer.svg" alt="Disclaimer"></a>
-					<a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator" target="_blank" rel="noopener noreferrer"><img alt="GitHub stars" src="https://img.shields.io/github/stars/digitalmalayali/free-website-or-app-privacy-policy-generator?style=social"></a>
-					</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="step-1" v-if="wizardStep==1">
+  <dark-mode-toggle id="dark-mode-toggle-1" ;>
+  </dark-mode-toggle>
+
+  <div id="app">
+    <div class="container">
+      <section class="hero is-primary">
+        <div class="hero-body">
           <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Welcome to Privacy Policy Generator" src="images/app_graphics/step_1.svg"><img class="center-block nav-btn" alt="Next" src="images/app_icons/next.svg" @click="nextStep()"></div>
-            <div class="column box scrollable">
-              <div class="control is-expanded">
-                <p class="help form-label">Website Name</p>
-                <input class="input" type="text" required v-model="webName" placeholder="Digital Malayali" v-bind:class="{ 'is-danger': (webName == 'Please provide the name of website!' || webName.length == 0) }">
-              </div>
-              <div class="control is-expanded">
-                <p class="help form-label">Contact E-mail</p>
-                <input class="input" type="email" required v-model="webContact" placeholder="contact@digitalmalayali.in" v-bind:class="{ 'is-danger': (webContact == 'Please provide the contact email!' || webContact.length == 0) }">
-              </div>
-			  <div class="control is-expanded">
-                <p class="help form-label">Website URL</p>
-                <input class="input" type="text" required v-model="siteURL" placeholder="https://www.digitalmalayali.in" v-bind:class="{ 'is-danger': (siteURL == 'Please provide your website URL!' || siteURL.length == 0) }">
-              </div>
-              <div class="control">
-                <p class="help form-label">Policy Effective Date</p>
-                <!-- Policy Effective Date-->
-                <input class="input is-primary" type="date" required="" v-model="effectiveFromDate">
-              </div>
-              <div class="control is-expanded">
-                <p class="help form-label">Owner Type</p>
-                <!-- Owner-->
-                <div class="select is-primary">
-                  <select v-model="typeOfDev">
-                    <option value="" disabled="">Select owner type</option>
-                    <option>Individual</option>
-                    <option>Company</option>
-                  </select>
-                </div>
-              </div>
-              <div class="control is-expanded" v-if="typeOfDev=='Company'">
-                <p class="help form-label">Company Name</p>
-                <!-- Company Name-->
-                <input class="input is-primary" type="text" v-model="companyName" placeholder="Digital Malayali">
-              </div>
-			  <div class="control is-expanded" v-if="typeOfDev=='Company'">
-                <p class="help form-label">Company Address</p>
-                <!-- Company Address-->
-                <input class="input is-primary" type="text" v-model="companyAdd" placeholder="Digital Malayali, Kerala, India">
-              </div>
-              <div class="control is-expanded" v-if="typeOfDev=='Individual'">
-                <p class="help form-label">Name</p>
-                <!-- Developer Name-->
-                <input class="input is-primary" type="text" v-model="devName" placeholder="Name">
-              </div>
-              <a class="button is-primary" @click="nextStep()" rel="noopener noreferrer">Next</a>
-            </div>
-          </div>
-        </section>
-        <section class="section" id="step-2" v-if="wizardStep==2">
-          <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Illustration to depict selections" src="images/app_graphics/step_2.svg">
-              <div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg" @click="prevStep()"><img class="child nav-btn" alt="Next" src="images/app_icons/next.svg" @click="nextStep()"></div>
-            </div>
-			<div class="column">
-            <div class="column box scrollable"><b>Include links to Third Party Services</b><a v-for="item in thirdPartyServices" rel="noopener noreferrer"><br>
-                <input type="checkbox" :id="'list-switch-' + item.model" v-model="item[item.model]">
-                <label :for="'list-switch-' + item.model"><img class="thirdparty-logo" :src="item.logo" :alt="item.name"><span class="thirdparty-text">{{ item.name }}</span></label></a>
-                </div>
-                <a class="button is-primary" @click="prevStep()" rel="noopener noreferrer">Prev</a>
-                <a class="button is-primary" @click="nextStep()" rel="noopener noreferrer">Next</a>
-		  <div class="box">
-      <p class="has-text-grey-light">All trademarks, logos and brand names are the property of their respective owners. All company, product and service names used above are for identification purposes only. Use of these names, trademarks and brands does not imply endorsement.</p>
-      </div>
-		  </div>
-		  </div>
-        </section>
-        <section class="section" id="step-3" v-if="wizardStep==3">
-          <div class="columns">
-            <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Illustration of a computer" src="images/app_graphics/step_3.svg"><div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg" @click="prevStep()"></div></div>
             <div class="column">
-              <div class="box">
-                <ol>This Privacy Policy Generator is completely <b>FREE</b>.
-                  <p>If you are able to, then consider supporting us by:
-                    <li><a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Visiting our website &#127760;</a></li>
-                    <li><a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator" target="_blank" rel="noopener noreferrer">Giving a star for our GitHub repo &#11088;</a></li>
-                  </p>
-                </ol>
-                <p>Please consider sharing this web app with your friends: <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20by%20%40DigiMalayali.%20A%20modified%20%26%20lite%20version%20of%20the%20web%20app%20built%20by%20%40nisrulz%20and%20the%20template%20written%20by%20%40AGareginyan.%20%20%20%23privacypolicy%20%20%23generator%20%20%23webapp%20%20%20%20%F0%9F%91%87&url=https%3A%2F%2Ffree-privacy-policy-generator.digitalmalayali.in%2F" target="_blank" rel="noopener noreferrer">Twitter, </a>
-				<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://free-privacy-policy-generator.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Linkedin, </a>
-				<a href="https://www.facebook.com/sharer/sharer.php?u=https://free-privacy-policy-generator.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Facebook, </a>
-				<a href="https://reddit.com/submit?url=https://free-privacy-policy-generator.digitalmalayali.in/&amp;title=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!" target="_blank" rel="noopener noreferrer">Reddit, </a>
-				<a href="whatsapp://send/?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!%20https://free-privacy-policy-generator.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">WhatsApp, </a>
-				<a href="https://t.me/share/url?url=https://free-privacy-policy-generator.digitalmalayali.in/&text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!" target="_blank" rel="noopener noreferrer">Telegram.</a></p>
-                <p>...or adding a review/comment in the project&apos;s <a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator/discussions" target="_blank" rel="noopener noreferrer">Discussions &#128172;</a></p>
-              </div>
-              <div class="box final-box"><b>All Done!</b><br>
-                <p>Now sit back and select the generated privacy policy. </p><a class="button is-primary" @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br><br>
-                <p class="has-text-grey-light">The accuracy of the generated privacy policy on this website is not legally binding. Use at your own risk.</p>
-                <p><a class="has-text-danger" @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer">Read the full Disclaimer here</a></p>
+              <div class="content"><a href="https://www.digitalmalayali.in" target="_blank" rel="noopener noreferrer">
+                  <h1>Free & Open Source <em>Privacy Policy</em> Generator</h1>
+                </a>
+                <h3>Generate a generic Privacy Policy for your website</h3>
+                <p>Modified with <span style="color: red">❤</span> by <a href="https://www.digitalmalayali.in/"
+                    target="_blank" rel="noopener noreferrer"><span class="txt">Digital Malayali</span>.<br>
+                  </a>Based on the original web app by<a href="https://github.com/nisrulz/app-privacy-policy-generator"
+                    target="_blank" rel="noopener noreferrer"><span class="txt"> Nishant </span></a>and template by <a
+                    href="https://github.com/ArthurGareginyan/privacy-policy-template" target="_blank"
+                    rel="noopener noreferrer"><span class="txt">Arthur Gareginyan</span></a>.<br>
+                  Illustrations from <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer"><span
+                      class="txt">unDraw.</span></a> Generate privacy policy for your<a
+                    href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank"
+                    rel="noopener noreferrer"><span class="txt"> Android/iOS app</span></a>.
+                </p>
+                <p>
+                  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20by%20%40DigiMalayali.%20A%20modified%20%26%20lite%20version%20of%20the%20web%20app%20built%20by%20%40nisrulz%20and%20the%20template%20written%20by%20%40AGareginyan.%20%20%20%23privacypolicy%20%20%23generator%20%20%23webapp%20%20%20%20%F0%9F%91%87&url=https%3A%2F%2Ffree-privacy-policy-generator.digitalmalayali.in%2F"
+                    target="_blank" rel="noopener noreferrer"><img class="social-logo"
+                      src="images/social_icons/twitter.svg" alt="Twitter"></a>
+                  <a href="https://reddit.com/submit?url=https://free-privacy-policy-generator.digitalmalayali.in/&amp;title=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20"
+                    target="_blank" rel="noopener noreferrer"><img class="social-logo"
+                      src="images/social_icons/reddit.svg" alt="Reddit"></a>
+                  <a href="whatsapp://send/?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!%20https://free-privacy-policy-generator.digitalmalayali.in/"
+                    target="_blank" rel="noopener noreferrer"><img class="social-logo"
+                      src="images/social_icons/whatsapp.svg" alt="WhatsApp"></a>
+                  <a href="https://t.me/share/url?url=https://free-privacy-policy-generator.digitalmalayali.in/&text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20"
+                    target="_blank" rel="noopener noreferrer"><img class="social-logo"
+                      src="images/social_icons/telegram.svg" alt="Telegram"></a>
+                  <a @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer"><img class="social-logo d"
+                      src="images/app_icons/disclaimer.svg" alt="Disclaimer"></a>
+                  <a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator" target="_blank"
+                    rel="noopener noreferrer"><img alt="GitHub stars"
+                      src="https://img.shields.io/github/stars/digitalmalayali/free-website-or-app-privacy-policy-generator?style=social"></a>
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <div class="modal" v-bind:class="{ 'is-active': showPrivacyModal }">
-          <div class="modal-background"></div>
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title no-select">Privacy Policy</p>
-              <button class="delete" aria-label="close" @click="togglePrivacyModalVisibility"></button>
-            </header>
-            <section class="modal-card-body modal-box">
-              <div id="privacy_content" v-show="contentRenderType==1"><strong>Privacy Policy</strong>
-				  <p>
-				  {{ devOrCompanyName }} operates the website "{{webName}}" at {{siteURL}}. 
-				  {{iOrWe | capitalize }} take your privacy seriously. To better protect your privacy 
-				  {{iOrWe}} provide this privacy policy notice explaining the way your personal information 
-				  is collected and used.
-				  </p>
-                <p><strong>Collection of Routine Information</strong></p>
-                <p>
-				  This website track basic information about its visitors. 
-				  This information includes, but is not limited to, IP addresses, browser details, 
-				  timestamps and referring pages. None of this information can personally identify specific 
-				  visitors to this website. The information is tracked for routine 
-				  administration and maintenance purposes.
-                </p>
-				<p><strong>Cookies</strong></p>
-				<p>
-				  Where necessary, this website uses cookies to store information about a visitor’s 
-				  preferences and history to better serve the visitor and/or present the 
-				  visitor with customized content.
-                </p>
-				<p><strong>Advertisement and Other Third Parties</strong></p>
-				<p>
-				  Advertising partners and other third parties may use cookies, scripts and/or web beacons to track 
-				  visitor activities on this website to display advertisements 
-				  and other useful information. Such tracking is done directly by the third parties through their 
-				  servers and is subject to their privacy policies. This website has no access or 
-				  control over these cookies, scripts and/or web beacons that may be used by third parties.
-                </p>
-                <div v-if="hasThirdPartyServicesSelected">
-                  <p>
-                    {{iOrWe | capitalize }} have included links on this website for your use and reference. 
-					{{iOrWe | capitalize }} {{areOrAm}} not responsible for the privacy policies on these websites. You should be aware 
-					that the privacy policies of these websites may differ from {{myOrOur}} own.
-                  </p>
-                  <p>
-                    Link to the privacy policy of third-party service providers used
-                    by the website
-                  </p>
-                  <ul>
-                    <li v-if="item[item.model] &amp;&amp; item.link.privacy" v-for="item in thirdPartyServices"><a :href="item.link.privacy" target="_blank" rel="noopener noreferrer">{{item.name}}</a></li>
-                  </ul>
-                </div>
-                <p><strong>Security</strong></p>
-                <p>
-                  The security of your personal information is important to {{meOrUs}}, but remember that no 
-				  method of transmission over the Internet, or method of electronic storage, is 100% secure. 
-				  While {{iOrWe}} strive to use commercially acceptable means to protect your personal information, 
-				  {{iOrWe}} cannot guarantee its absolute security.
-                </p>
-                <p><strong>Changes To This Privacy Policy</strong></p>
-                <p>
-                  This Privacy Policy is effective as of {{effectiveFromDate}} and will remain in effect except concerning any 
-				  changes in its provisions in the future, which will be in effect immediately after being posted on this page. 
-				  {{iOrWe | capitalize }} reserve the right to update or change {{myOrOur}} Privacy Policy at any time and you 
-				  should check this Privacy Policy periodically. If {{iOrWe}} make any material changes to this Privacy Policy, 
-				  {{iOrWe}} will notify you either through the email address you have provided {{meOrUs}} or by 
-				  placing a prominent notice on {{myOrOur}} website.
-                </p>
-                <p><strong>Contact Information</strong></p>
-                <p>
-                  For any questions or concerns regarding the privacy policy, 
-				  please send {{meOrUs}} an email at {{webContact}}.
-                </p>
-				<p>
-				{{companyAddIn}}
-				</p><br>
-                <p>This privacy policy page was created by <a href="https://github.com/ArthurGareginyan/privacy-policy-template/" target="_blank" rel="noopener noreferrer">Arthur Gareginyan </a>and modified/generated by <a href="https://free-privacy-policy-generator.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Free & Open Source Privacy Policy Generator</a>.</p>
+        </div>
+      </section>
+      <section class="section" id="step-1" v-if="wizardStep==1">
+        <div class="columns">
+          <div class="column is-6 is-information"><img class="center-block sidebar-img"
+              alt="Welcome to Privacy Policy Generator" src="images/app_graphics/step_1.svg"><img
+              class="center-block nav-btn" alt="Next" src="images/app_icons/next.svg" @click="nextStep()"></div>
+          <div class="column box scrollable">
+            <div class="control is-expanded">
+              <p class="help form-label">Website Name</p>
+              <input class="input" type="text" required v-model="webName" placeholder="Digital Malayali"
+                v-bind:class="{ 'is-danger': (webName == 'Please provide the name of website!' || webName.length == 0) }">
+            </div>
+            <div class="control is-expanded">
+              <p class="help form-label">Contact E-mail</p>
+              <input class="input" type="email" required v-model="webContact" placeholder="contact@digitalmalayali.in"
+                v-bind:class="{ 'is-danger': (webContact == 'Please provide the contact email!' || webContact.length == 0) }">
+            </div>
+            <div class="control is-expanded">
+              <p class="help form-label">Website URL</p>
+              <input class="input" type="text" required v-model="siteURL" placeholder="https://www.digitalmalayali.in"
+                v-bind:class="{ 'is-danger': (siteURL == 'Please provide your website URL!' || siteURL.length == 0) }">
+            </div>
+            <div class="control">
+              <p class="help form-label">Policy Effective Date</p>
+              <!-- Policy Effective Date-->
+              <input class="input is-primary" type="date" required="" v-model="effectiveFromDate">
+            </div>
+            <div class="control is-expanded">
+              <p class="help form-label">Owner Type</p>
+              <!-- Owner-->
+              <div class="select is-primary">
+                <select v-model="typeOfDev">
+                  <option value="" disabled="">Select owner type</option>
+                  <option>Individual</option>
+                  <option>Company</option>
+                </select>
               </div>
-              <textarea class="textarea" id="privacy_txtarea" onclick="this.focus();this.select()" readonly="readonly" v-show="contentRenderType==2"></textarea>
-            </section>
-            <footer class="modal-card-foot">
-              <button class="button is-success" @click="getHtml('privacy_content','privacy_txtarea')">HTML</button>
-              <button class="button is-success" @click="getMarkdown('privacy_content', 'privacy_txtarea')">Markdown</button>
-              <button class="button is-success" v-if="contentRenderType!=1" @click="preview()">Preview</button>
-            </footer>
+            </div>
+            <div class="control is-expanded" v-if="typeOfDev=='Company'">
+              <p class="help form-label">Company Name</p>
+              <!-- Company Name-->
+              <input class="input is-primary" type="text" v-model="companyName" placeholder="Digital Malayali">
+            </div>
+            <div class="control is-expanded" v-if="typeOfDev=='Company'">
+              <p class="help form-label">Company Address</p>
+              <!-- Company Address-->
+              <input class="input is-primary" type="text" v-model="companyAdd"
+                placeholder="Digital Malayali, Kerala, India">
+            </div>
+            <div class="control is-expanded" v-if="typeOfDev=='Individual'">
+              <p class="help form-label">Name</p>
+              <!-- Developer Name-->
+              <input class="input is-primary" type="text" v-model="devName" placeholder="Name">
+            </div>
+            <a class="button is-primary" @click="nextStep()" rel="noopener noreferrer">Next</a>
           </div>
-        </div> 
-		<div class="modal" v-bind:class="{ 'is-active': showDisclaimerModal }">
-          <div class="modal-background"></div>
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Disclaimer</p>
-              <button class="delete" aria-label="close" @click="toggleDisclaimerModalVisibility"></button>
-            </header>
-            <section class="modal-card-body">
-              <p>
-                This template for privacy policy is provided on &quot;AS IS&quot; 
-				basis, without warranties or conditions of any kind, either expressed or implied. 
-				It is intended for you as an inspirational document and you may use it 
-				when compiling your own privacy policy. If your website is released under an
-				open source license, you might need to modify the Privacy Policy accordingly. 
-				The developer of Free & Open Source Privacy Policy Generator does not take any 
-				responsibility for the legal consequences associated with the use of this privacy policy 
-				and urges you to seek independent legal advice ensuring compliance with all rules applicable for the
-                users/visitors of your website. The developer of Free & Open Source Privacy 
-				Policy Generator can in no way be found liable for any direct or
-                indirect damage/loss suffered by individual/company due to the
-                use of this document.
+        </div>
+      </section>
+      <section class="section" id="step-2" v-if="wizardStep==2">
+        <div class="columns">
+          <div class="column is-6 is-information"><img class="center-block sidebar-img"
+              alt="Illustration to depict selections" src="images/app_graphics/step_2.svg">
+            <div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg"
+                @click="prevStep()"><img class="child nav-btn" alt="Next" src="images/app_icons/next.svg"
+                @click="nextStep()"></div>
+          </div>
+          <div class="column">
+            <div class="column box scrollable"><b>Include links to Third Party Services</b><a
+                v-for="item in thirdPartyServices" rel="noopener noreferrer"><br>
+                <input type="checkbox" :id="'list-switch-' + item.model" v-model="item[item.model]">
+                <label :for="'list-switch-' + item.model"><img class="thirdparty-logo" :src="item.logo"
+                    :alt="item.name"><span class="thirdparty-text">{{ item.name }}</span></label></a>
+            </div>
+            <a class="button is-primary" @click="prevStep()" rel="noopener noreferrer">Prev</a>
+            <a class="button is-primary" @click="nextStep()" rel="noopener noreferrer">Next</a>
+            <div class="box">
+              <p class="has-text-grey-light">All trademarks, logos and brand names are the property of their respective
+                owners. All company, product and service names used above are for identification purposes only. Use of
+                these names, trademarks and brands does not imply endorsement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="step-3" v-if="wizardStep==3">
+        <div class="columns">
+          <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Illustration of a computer"
+              src="images/app_graphics/step_3.svg">
+            <div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg"
+                @click="prevStep()"></div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <ol>This Privacy Policy Generator is completely <b>FREE</b>.
+                <p>If you are able to, then consider supporting us by:
+                  <li><a href="https://www.digitalmalayali.in/" target="_blank" rel="noopener noreferrer">Visiting our
+                      website &#127760;</a></li>
+                  <li><a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator" target="_blank"
+                      rel="noopener noreferrer">Giving a star for our GitHub repo &#11088;</a></li>
+                </p>
+              </ol>
+              <p>Please consider sharing this web app with your friends: <a
+                  href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20by%20%40DigiMalayali.%20A%20modified%20%26%20lite%20version%20of%20the%20web%20app%20built%20by%20%40nisrulz%20and%20the%20template%20written%20by%20%40AGareginyan.%20%20%20%23privacypolicy%20%20%23generator%20%20%23webapp%20%20%20%20%F0%9F%91%87&url=https%3A%2F%2Ffree-privacy-policy-generator.digitalmalayali.in%2F"
+                  target="_blank" rel="noopener noreferrer">Twitter, </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://free-privacy-policy-generator.digitalmalayali.in/"
+                  target="_blank" rel="noopener noreferrer">Linkedin, </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://free-privacy-policy-generator.digitalmalayali.in/"
+                  target="_blank" rel="noopener noreferrer">Facebook, </a>
+                <a href="https://reddit.com/submit?url=https://free-privacy-policy-generator.digitalmalayali.in/&amp;title=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!"
+                  target="_blank" rel="noopener noreferrer">Reddit, </a>
+                <a href="whatsapp://send/?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!%20https://free-privacy-policy-generator.digitalmalayali.in/"
+                  target="_blank" rel="noopener noreferrer">WhatsApp, </a>
+                <a href="https://t.me/share/url?url=https://free-privacy-policy-generator.digitalmalayali.in/&text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20!"
+                  target="_blank" rel="noopener noreferrer">Telegram.</a>
               </p>
-            </section>
-            <footer class="modal-card-foot">
-              <button class="button is-info" aria-label="close" @click="toggleDisclaimerModalVisibility">Ok</button>
-            </footer>
+              <p>...or adding a review/comment in the project&apos;s <a
+                  href="https://github.com/digitalmalayali/free-website-privacy-policy-generator/discussions"
+                  target="_blank" rel="noopener noreferrer">Discussions &#128172;</a></p>
+            </div>
+            <div class="box final-box"><b>All Done!</b><br>
+              <p>Now sit back and select the generated privacy policy. </p><a class="button is-primary"
+                @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br><br>
+              <p class="has-text-grey-light">The accuracy of the generated privacy policy on this website is not legally
+                binding. Use at your own risk.</p>
+              <p><a class="has-text-danger" @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer">Read the
+                  full Disclaimer here</a></p>
+            </div>
           </div>
+        </div>
+      </section>
+      <div class="modal" v-bind:class="{ 'is-active': showPrivacyModal }">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title no-select">Privacy Policy</p>
+            <button class="delete" aria-label="close" @click="togglePrivacyModalVisibility"></button>
+          </header>
+          <section class="modal-card-body modal-box">
+            <div id="privacy_content" v-show="contentRenderType==1"><strong>Privacy Policy</strong>
+              <p>
+                {{ devOrCompanyName }} operates the website "{{webName}}" at {{siteURL}}.
+                {{iOrWe | capitalize }} take your privacy seriously. To better protect your privacy
+                {{iOrWe}} provide this privacy policy notice explaining the way your personal information
+                is collected and used.
+              </p>
+              <p><strong>Collection of Routine Information</strong></p>
+              <p>
+                This website track basic information about its visitors.
+                This information includes, but is not limited to, IP addresses, browser details,
+                timestamps and referring pages. None of this information can personally identify specific
+                visitors to this website. The information is tracked for routine
+                administration and maintenance purposes.
+              </p>
+              <p><strong>Cookies</strong></p>
+              <p>
+                Where necessary, this website uses cookies to store information about a visitor’s
+                preferences and history to better serve the visitor and/or present the
+                visitor with customized content.
+              </p>
+              <p><strong>Advertisement and Other Third Parties</strong></p>
+              <p>
+                Advertising partners and other third parties may use cookies, scripts and/or web beacons to track
+                visitor activities on this website to display advertisements
+                and other useful information. Such tracking is done directly by the third parties through their
+                servers and is subject to their privacy policies. This website has no access or
+                control over these cookies, scripts and/or web beacons that may be used by third parties.
+              </p>
+              <div v-if="hasThirdPartyServicesSelected">
+                <p>
+                  {{iOrWe | capitalize }} have included links on this website for your use and reference.
+                  {{iOrWe | capitalize }} {{areOrAm}} not responsible for the privacy policies on these websites. You
+                  should be aware
+                  that the privacy policies of these websites may differ from {{myOrOur}} own.
+                </p>
+                <p>
+                  Link to the privacy policy of third-party service providers used
+                  by the website
+                </p>
+                <ul>
+                  <li v-if="item[item.model] &amp;&amp; item.link.privacy" v-for="item in thirdPartyServices"><a
+                      :href="item.link.privacy" target="_blank" rel="noopener noreferrer">{{item.name}}</a></li>
+                </ul>
+              </div>
+              <p><strong>Security</strong></p>
+              <p>
+                The security of your personal information is important to {{meOrUs}}, but remember that no
+                method of transmission over the Internet, or method of electronic storage, is 100% secure.
+                While {{iOrWe}} strive to use commercially acceptable means to protect your personal information,
+                {{iOrWe}} cannot guarantee its absolute security.
+              </p>
+              <p><strong>Changes To This Privacy Policy</strong></p>
+              <p>
+                This Privacy Policy is effective as of {{effectiveFromDate}} and will remain in effect except concerning
+                any
+                changes in its provisions in the future, which will be in effect immediately after being posted on this
+                page.
+                {{iOrWe | capitalize }} reserve the right to update or change {{myOrOur}} Privacy Policy at any time and
+                you
+                should check this Privacy Policy periodically. If {{iOrWe}} make any material changes to this Privacy
+                Policy,
+                {{iOrWe}} will notify you either through the email address you have provided {{meOrUs}} or by
+                placing a prominent notice on {{myOrOur}} website.
+              </p>
+              <p><strong>Contact Information</strong></p>
+              <p>
+                For any questions or concerns regarding the privacy policy,
+                please send {{meOrUs}} an email at {{webContact}}.
+              </p>
+              <p>
+                {{companyAddIn}}
+              </p><br>
+              <p>This privacy policy page was created by <a
+                  href="https://github.com/ArthurGareginyan/privacy-policy-template/" target="_blank"
+                  rel="noopener noreferrer">Arthur Gareginyan </a>and modified/generated by <a
+                  href="https://free-privacy-policy-generator.digitalmalayali.in/" target="_blank"
+                  rel="noopener noreferrer">Free & Open Source Privacy Policy Generator</a>.</p>
+            </div>
+            <textarea class="textarea" id="privacy_txtarea" onclick="this.focus();this.select()" readonly="readonly"
+              v-show="contentRenderType==2"></textarea>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success" @click="getHtml('privacy_content','privacy_txtarea')">HTML</button>
+            <button class="button is-success"
+              @click="getMarkdown('privacy_content', 'privacy_txtarea')">Markdown</button>
+            <button class="button is-success" v-if="contentRenderType!=1" @click="preview()">Preview</button>
+          </footer>
+        </div>
+      </div>
+      <div class="modal" v-bind:class="{ 'is-active': showDisclaimerModal }">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Disclaimer</p>
+            <button class="delete" aria-label="close" @click="toggleDisclaimerModalVisibility"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>
+              This template for privacy policy is provided on &quot;AS IS&quot;
+              basis, without warranties or conditions of any kind, either expressed or implied.
+              It is intended for you as an inspirational document and you may use it
+              when compiling your own privacy policy. If your website is released under an
+              open source license, you might need to modify the Privacy Policy accordingly.
+              The developer of Free & Open Source Privacy Policy Generator does not take any
+              responsibility for the legal consequences associated with the use of this privacy policy
+              and urges you to seek independent legal advice ensuring compliance with all rules applicable for the
+              users/visitors of your website. The developer of Free & Open Source Privacy
+              Policy Generator can in no way be found liable for any direct or
+              indirect damage/loss suffered by individual/company due to the
+              use of this document.
+            </p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-info" aria-label="close" @click="toggleDisclaimerModalVisibility">Ok</button>
+          </footer>
         </div>
       </div>
     </div>
-	
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/to-markdown/3.1.1/to-markdown.min.js" integrity="sha256-2PIa0cHy6lNEesnk4/qokv291Whx/uhAy2V6WL2zmfo=" crossorigin="anonymous"></script>
-    <script src="js/thirdpartyservices.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/main.js"></script>
-	  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/to-markdown/3.1.1/to-markdown.min.js"
+    integrity="sha256-2PIa0cHy6lNEesnk4/qokv291Whx/uhAy2V6WL2zmfo=" crossorigin="anonymous"></script>
+  <script src="js/thirdpartyservices.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
 
   <!-- Service Worker-->
   <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js');
+      navigator.serviceWorker.register('/sw.js');
     }
   </script>
-	
-	<script>
-	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS.load('particles-js', '/js/particles.json', function() {
-	console.log('particles.json loaded');
-	});
-	</script>
-	
+
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', '/js/particles.json', function () {
+      console.log('particles.json loaded');
+    });
+  </script>
+
 </body>
+
 </html>

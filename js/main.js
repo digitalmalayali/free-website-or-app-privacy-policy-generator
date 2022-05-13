@@ -23,21 +23,19 @@ var app = new Vue({
     iOrWe: "[I/We]",
     typeOfDev: "",
     webName: "",
-	siteURL: "",
+    siteURL: "",
     webContact: "",
     myOrOur: "[my/our]",
     meOrUs: "[me/us]",
-	areOrAm: "[are/am]",
+    areOrAm: "[are/am]",
     devName: "",
     companyName: "",
-	companyAdd: "",
-	companyAddIn: "",
+    companyAdd: "",
+    companyAddIn: "",
     devOrCompanyName: "[Developer/Company name]",
     effectiveFromDate: new Date().toISOString().slice(0, 10),
     thirdPartyServices: thirdPartyServicesJsonArray,
     showPrivacyModal: false,
-    showGDPRPrivacyModal: false,
-    showTermsModal: false,
     showDisclaimerModal: false,
     hasThirdPartyServicesSelected: true,
     contentRenderType: 1,
@@ -67,8 +65,8 @@ var app = new Vue({
             this.webContact = "Please provide the contact email!"
             return
           }
-		  
-		  if (this.siteURL.length == 0 || this.siteURL == "" || this.siteURL == null || this.siteURL == "Please provide your website URL!") {
+
+          if (this.siteURL.length == 0 || this.siteURL == "" || this.siteURL == null || this.siteURL == "Please provide your website URL!") {
             this.siteURL = "Please provide your website URL!"
             return
           }
@@ -116,44 +114,31 @@ var app = new Vue({
       loadInTextView(target, markdown)
     },
     generate: function () {
-	  if (this.typeOfDev === "Individual") {
+      if (this.typeOfDev === "Individual") {
         this.devOrCompanyName = this.devName
         this.iOrWe = "I"
         this.myOrOur = "my"
         this.meOrUs = "me"
-		this.areOrAm = "am"
+        this.areOrAm = "am"
       } else if (this.typeOfDev === "Company") {
         this.devOrCompanyName = this.companyName
         this.iOrWe = "we"
         this.myOrOur = "our"
         this.meOrUs = "us"
-		this.areOrAm = "are"
+        this.areOrAm = "are"
       }
-	  
-	  if (this.companyAdd === "") {
+
+      if (this.companyAdd === "") {
         this.companyAddIn = ""
       } else {
         this.companyAddIn = "Our Address: " + this.companyAdd
       }
-	  
     },
     togglePrivacyModalVisibility: function () {
       this.generate()
       this.hasThirdPartyServicesSelected = this.checkForThirdPartyServicesEnabled()
       this.contentRenderType = 1
       this.showPrivacyModal = !this.showPrivacyModal
-    },
-    toggleGDPRPrivacyModalVisibility: function () {
-      this.generate()
-      this.hasThirdPartyServicesSelected = this.checkForThirdPartyServicesEnabled()
-      this.contentRenderType = 1
-      this.showGDPRPrivacyModal = !this.showGDPRPrivacyModal
-    },
-    toggleTermsModalVisibility: function () {
-      this.generate()
-      this.hasThirdPartyServicesSelected = this.checkForThirdPartyServicesEnabled()
-      this.contentRenderType = 1
-      this.showTermsModal = !this.showTermsModal
     },
     toggleDisclaimerModalVisibility: function () {
       this.showDisclaimerModal = !this.showDisclaimerModal

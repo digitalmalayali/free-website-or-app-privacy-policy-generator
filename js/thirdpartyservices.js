@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+
 var thirdPartyServicesJsonArray = [
   {
     "name": "Google Analytics",
@@ -72,7 +72,7 @@ var thirdPartyServicesJsonArray = [
       "privacy": "https://www.whatsapp.com/legal/privacy-policy/"
     }
   },
-    {
+  {
     "name": "Instagram",
     "model": "insta",
     "insta": false,
