@@ -248,14 +248,6 @@ strong,
   margin: 2px;
 }
 
-.column.is-information .nav-btn {
-  cursor: grab;
-  height: 3em;
-  -webkit-filter: invert(1);
-  filter: invert(1);
-  opacity: 92%;
-}
-
 .column.is-information .sidebar-img {
   pointer-events: none;
   height: 21em;

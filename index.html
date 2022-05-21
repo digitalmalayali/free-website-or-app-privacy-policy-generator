@@ -116,7 +116,7 @@
                     target="_blank" rel="noopener noreferrer"><img class="social-logo"
                       src="images/social_icons/telegram.svg" alt="Telegram"></a>
                   <a @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer"><img class="social-logo d"
-                      src="images/app_icons/disclaimer.svg" alt="Disclaimer"></a>
+                      src="images/app_graphics/disclaimer.svg" alt="Disclaimer"></a>
                   <a href="https://github.com/digitalmalayali/free-website-privacy-policy-generator" target="_blank"
                     rel="noopener noreferrer"><img alt="GitHub stars"
                       src="https://img.shields.io/github/stars/digitalmalayali/free-website-or-app-privacy-policy-generator?style=social"></a>
@@ -141,8 +141,8 @@
       <section class="section" id="step-1" v-if="wizardStep==1">
         <div class="columns">
           <div class="column is-6 is-information"><img class="center-block sidebar-img"
-              alt="Welcome to Privacy Policy Generator" src="images/app_graphics/step_1.svg"><img
-              class="center-block nav-btn" alt="Next" src="images/app_icons/next.svg" @click="nextStep()"></div>
+              alt="Welcome to Privacy Policy Generator" src="images/app_graphics/step_1.svg">
+            </div>
           <div class="column box scrollable">
             <div class="control is-expanded">
               <p class="help form-label">Website Name</p>
@@ -167,7 +167,7 @@
             <div class="control is-expanded">
               <p class="help form-label">Owner Type</p>
               <!-- Owner-->
-              <div class="select is-primary">
+              <div class="select" v-bind:class="{ 'is-danger': (typeOfDev.length == 0) }">
                 <select v-model="typeOfDev">
                   <option value="" disabled="">Select owner type</option>
                   <option>Individual</option>
@@ -199,9 +199,6 @@
         <div class="columns">
           <div class="column is-6 is-information"><img class="center-block sidebar-img"
               alt="Illustration to depict selections" src="images/app_graphics/step_2.svg">
-            <div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg"
-                @click="prevStep()"><img class="child nav-btn" alt="Next" src="images/app_icons/next.svg"
-                @click="nextStep()"></div>
           </div>
           <div class="column">
             <div class="column box scrollable"><b>Include links to Third Party Services</b><a
@@ -224,8 +221,6 @@
         <div class="columns">
           <div class="column is-6 is-information"><img class="center-block sidebar-img" alt="Illustration of a computer"
               src="images/app_graphics/step_3.svg">
-            <div class="center-parent"><img class="child nav-btn" alt="Previous" src="images/app_icons/prev.svg"
-                @click="prevStep()"></div>
           </div>
           <div class="column">
             <div class="box">
@@ -256,8 +251,9 @@
                   target="_blank" rel="noopener noreferrer">Discussions &#128172;</a></p>
             </div>
             <div class="box final-box"><b>All Done!</b><br>
-              <p>Now sit back and select the generated privacy policy. </p><a class="button is-primary"
-                @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br><br>
+              <p>Now sit back and select the generated privacy policy &#128071;</p><a class="button is-danger"
+                @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br>
+                <a class="button is-primary" @click="prevStep()" rel="noopener noreferrer">Go back</a><br><br>
               <p class="has-text-grey-light">The accuracy of the generated privacy policy on this website is not legally
                 binding. Use at your own risk.</p>
               <p><a class="has-text-danger" @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer">Read the
@@ -361,6 +357,7 @@
             <button class="button is-success"
               @click="getMarkdown('privacy_content', 'privacy_txtarea')">Markdown</button>
             <button class="button is-success" v-if="contentRenderType!=1" @click="preview()">Preview</button>
+            <button class="button is-link" id="copybtn" data-clipboard-target="#privacy_content">Copy</button>
           </footer>
         </div>
       </div>
@@ -402,6 +399,24 @@
   <script src="js/utils.js"></script>
   <script src="js/main.js"></script>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+
+  <script>
+    var btn = document.getElementById('copybtn');
+    var clipboard = new ClipboardJS(btn);
+
+    clipboard.on('success', function (e) {
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      console.info('Trigger:', e.trigger);
+    });
+
+    clipboard.on('error', function (e) {
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      console.info('Trigger:', e.trigger);
+    });
+  </script>
 
 
 

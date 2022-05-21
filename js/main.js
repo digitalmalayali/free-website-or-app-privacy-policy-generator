@@ -41,6 +41,7 @@ var app = new Vue({
     contentRenderType: 1,
     wizardStep: 1,
     totalWizardSteps: 3,
+    isRequired: false,
   },
   filters: {
     capitalize: function (value) {
@@ -68,6 +69,11 @@ var app = new Vue({
 
           if (this.siteURL.length == 0 || this.siteURL == "" || this.siteURL == null || this.siteURL == "Please provide your website URL!") {
             this.siteURL = "Please provide your website URL!"
+            return
+          }
+
+          if (this.typeOfDev.length == 0) {
+            this.isRequired = true
             return
           }
         }

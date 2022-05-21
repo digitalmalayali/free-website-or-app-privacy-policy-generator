@@ -180,11 +180,6 @@ img.social-logo {
   margin: 2px;
 }
 
-.column.is-information .nav-btn {
-  cursor: grab;
-  height: 3em;
-}
-
 .column.is-information .sidebar-img {
   pointer-events: none;
   height: 21em;
