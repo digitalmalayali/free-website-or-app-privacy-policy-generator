@@ -21,7 +21,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="manifest" href="ppgenerator.webmanifest">
   <title>Free & Open Source Privacy Policy Generator</title>
   <meta charset="utf-8">
@@ -65,6 +68,11 @@
     })(window, document, 'script', 'dataLayer', 'GTM-TQP83SR');</script>
   <!-- End Google Tag Manager -->
 
+  <!-- Google Ad -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3855750928963104"
+    crossorigin="anonymous"></script>
+  <!-- Google Ad -->
+
 </head>
 
 <body>
@@ -95,12 +103,12 @@
                     target="_blank" rel="noopener noreferrer"><span class="txt"> Nishant </span></a>and template by <a
                     href="https://github.com/ArthurGareginyan/privacy-policy-template" target="_blank"
                     rel="noopener noreferrer"><span class="txt">Arthur Gareginyan</span></a>.
-                    <a href="https://malayalam-privacy-policy-generator.digitalmalayali.in/" target="_blank" rel="noopener noreferrer"><span
-                      class="txt">Malayalam</span> version.<br>
-                  Illustrations from <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer"><span
-                      class="txt">unDraw.</span></a> Generate privacy policy for your<a
-                    href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank"
-                    rel="noopener noreferrer"><span class="txt"> Android/iOS app</span></a>.
+                  <a href="https://malayalam-privacy-policy-generator.digitalmalayali.in/" target="_blank"
+                    rel="noopener noreferrer"><span class="txt">Malayalam</span> version.<br>
+                    Illustrations from <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer"><span
+                        class="txt">unDraw.</span></a> Generate privacy policy for your<a
+                      href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank"
+                      rel="noopener noreferrer"><span class="txt"> Android/iOS app</span></a>.
                 </p>
                 <p>
                   <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Free%20%26%20Open%20Source%20Privacy%20Policy%20Generator%20for%20Websites%20%F0%9F%8C%90%20by%20%40DigiMalayali.%20A%20modified%20%26%20lite%20version%20of%20the%20web%20app%20built%20by%20%40nisrulz%20and%20the%20template%20written%20by%20%40AGareginyan.%20%20%20%23privacypolicy%20%20%23generator%20%20%23webapp%20%20%20%20%F0%9F%91%87&url=https%3A%2F%2Ffree-privacy-policy-generator.digitalmalayali.in%2F"
@@ -121,18 +129,6 @@
                     rel="noopener noreferrer"><img alt="GitHub stars"
                       src="https://img.shields.io/github/stars/digitalmalayali/free-website-or-app-privacy-policy-generator?style=social"></a>
                 </p>
-                <!--Ad-->
-                <script async
-                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3855750928963104"
-                  crossorigin="anonymous"></script>
-                <!-- Privacy Policy Generator Ad -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3855750928963104"
-                  data-ad-slot="9758959384" data-ad-format="rectangle, horizontal"
-                  data-full-width-responsive="true"></ins>
-                <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                <!--Ad-->
               </div>
             </div>
           </div>
@@ -142,7 +138,7 @@
         <div class="columns">
           <div class="column is-6 is-information"><img class="center-block sidebar-img"
               alt="Welcome to Privacy Policy Generator" src="images/app_graphics/step_1.svg">
-            </div>
+          </div>
           <div class="column box scrollable">
             <div class="control is-expanded">
               <p class="help form-label">Website Name</p>
@@ -152,7 +148,7 @@
             <div class="control is-expanded">
               <p class="help form-label">Contact E-mail</p>
               <input class="input" type="email" required v-model="webContact" placeholder="contact@digitalmalayali.in"
-                v-bind:class="{ 'is-danger': (webContact == 'Please provide the contact email!' || webContact.length == 0) }">
+                v-bind:class="{ 'is-danger': (webContact == 'Please provide the contact email!' || webContact == 'Please provide a valid email!' || webContact.length == 0) }">
             </div>
             <div class="control is-expanded">
               <p class="help form-label">Website URL</p>
@@ -253,7 +249,7 @@
             <div class="box final-box"><b>All Done!</b><br>
               <p>Now sit back and select the generated privacy policy &#128071;</p><a class="button is-danger"
                 @click="togglePrivacyModalVisibility" rel="noopener noreferrer">Privacy Policy</a><br>
-                <a class="button is-primary" @click="prevStep()" rel="noopener noreferrer">Go back</a><br><br>
+              <a class="button is-primary" @click="prevStep()" rel="noopener noreferrer">Go back</a><br><br>
               <p class="has-text-grey-light">The accuracy of the generated privacy policy on this website is not legally
                 binding. Use at your own risk.</p>
               <p><a class="has-text-danger" @click="toggleDisclaimerModalVisibility" rel="noopener noreferrer">Read the
@@ -338,7 +334,7 @@
               <p><strong>Contact Information</strong></p>
               <p>
                 For any questions or concerns regarding the privacy policy,
-                please send {{meOrUs}} an email at {{webContact}}.
+                please send {{meOrUs}} an email at <a :href="'mailto:' + webContact">{{webContact}}</a>.
               </p>
               <p>
                 {{companyAddIn}}
@@ -398,7 +394,7 @@
   <script src="js/thirdpartyservices.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/main.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 
   <script>
