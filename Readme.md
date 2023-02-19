@@ -52,4 +52,4 @@ Thanks for your interest in this :heart:
 
 [GNU Affero General Public License v3.0](LICENSE)
 
-© Copyright 2022 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
+© Copyright 2023 Digital Malayali, Nishant Srivastava, Arthur Gareginyan
